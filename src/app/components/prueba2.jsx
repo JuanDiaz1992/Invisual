@@ -47,7 +47,7 @@ const Carousel3Dv2 = ({ slides }) => {
   return (
     <div
       {...handlers} // Agrega los handlers de swipe al contenedor
-      className="flex items-center flex-col justify-center relative perspective-[1500px] lg:min-h-[400px]"
+      className="cursor-grab select-none active:cursor-grabbing flex items-center flex-col justify-center relative perspective-[1500px] lg:min-h-[400px]"
     >
       {slides.map((slide, index) => {
         const isCenter = positions[positionIndexes[index]] === "center"; // Verifica si la imagen está centrada

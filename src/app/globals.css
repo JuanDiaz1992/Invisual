@@ -186,7 +186,7 @@ body {
 }
 
 .satisfaction {
-  background-image: url('/images/bg-customer-satisfaction.webp');
+  background-image: url('/images/customers-satisfaction-bg.webp');
   background-position: top right;
   background-size:cover;
 }
@@ -517,8 +517,8 @@ body {
 }
 
 .results-services {
-  background-image: url('/images/CTA-results.webp');
-  background-position: right top;
+  background-image: url('/images/vehicle-wrapping-services/CTA-results.webp');
+  background-position: center top;
   background-size:cover;
 }
 
@@ -566,3 +566,17 @@ body {
 
 
 
+.swiper-pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 24px;
+}
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 1 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+.swiper-pagination-bullet-active {
+  background: #D92630 !important;
+}

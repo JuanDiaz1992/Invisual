@@ -18,7 +18,7 @@ export const AccordionItem = ({number, title, ans }) => {
 
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center py-3 px-4 text-left text-lg hover:bg-gray-100 transition group"
+        className="w-full flex justify-between items-center py-3 px-4 text-left text-lg hover:bg-gray-100 transition group cursor-pointer"
       >
         <span className={`tofinowide text-[50px] group-hover:text-[#D92630] ${open ? 'text-[#D92630]' : ''}`}>{number}</span>
         <span className="capitalize text-[25px] font-bold group-hover:text-black">{title}</span> 

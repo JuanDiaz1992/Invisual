@@ -52,27 +52,27 @@ export const AditionalServicesData = [
   {
     desc: 'Enhance your windows with our custom vinyl designs, offering both style and functionality.',
     link: '',
-    bgImage: '/images/wall-wraps.webp'
+    bgImage: '/images/aditional-services-home-img1.webp'
   },
   {
     desc: '2Enhance your windows with our custom vinyl designs, offering both style and functionality.',
     link: '',
-    bgImage: '/images/wall-wraps.webp'
+    bgImage: '/images/aditional-services-home-img2.webp'
   },
   {
     desc: '3Enhance your windows with our custom vinyl designs, offering both style and functionality.',
     link: '',
-    bgImage: '/images/wall-wraps.webp'
+    bgImage: '/images/aditional-services-home-img3.webp'
   },
   {
     desc: '4Enhance your windows with our custom vinyl designs, offering both style and functionality.',
     link: '',
-    bgImage: '/images/additional-services.webp'
+    bgImage: '/images/aditional-services-home-img4.webp'
   },
   {
     desc: '5Enhance your windows with our custom vinyl designs, offering both style and functionality.',
     link: '',
-    bgImage: ''
+    bgImage: '/images/aditional-services-home-img5.webp'
   },
 ]
 
@@ -92,6 +92,8 @@ export const reviews = [
       text: '"Just got finished up with InVisual Signs. Just an incredible wrap, beyond my expectations. If you are a small business looking to get your fleet wrapped, and you have one vehicle like myself, please come see them!"',
       video: '/images/ritas.svg'
     },
+    
+    
 ]
 
 export const FaqsHome = [
