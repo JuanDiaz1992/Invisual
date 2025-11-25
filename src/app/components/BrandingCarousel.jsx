@@ -1,4 +1,5 @@
 // MyCarousel.jsx
+"use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'; // Importa los estilos básicos de Swiper
 import 'swiper/css/navigation'; // Estilos para la navegación

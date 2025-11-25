@@ -34,8 +34,8 @@ const Footer = (props) => {
     <>
       <div className="lg:pb-4">
 
-          <Image 
-          src="/images/footer-lines.webp"
+          <Image
+          src="/images/footer-lines.svg"
           alt="decorative lines"
           sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
           srcSet="/images/footer-lines.webp 768w, /images/footer-lines.webp 1024w"

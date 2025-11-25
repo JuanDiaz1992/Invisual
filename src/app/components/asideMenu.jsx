@@ -7,7 +7,7 @@ const sections = [
   { id: "why", label: "Why Choose Us?" },
   { id: "benefits", label: "Beneficts of Vehicle Wraps Services" },
   { id: "graphic", label: "Our Projects" },
-  { id: "aditional", label: "Additional Services" },
+  { id: "additional", label: "Additional Services" },
   { id: "types", label: "Types of Vehicles Wrapped" },
 ];
 
