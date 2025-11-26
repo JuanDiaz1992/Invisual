@@ -210,32 +210,25 @@ export const GraphicDesignExamplesComplete = [
   // },
 ];
 
-export const TypesOfWrapText = [
+export const TypesOfWrapsComplete = [
   {
+    src: "/images/partial-vehicle-wrap-example.webp",
+    alt: "Partial Vehicle Wrap Example",
     title: "Partial Wrap",
     desc: "Partial wraps cover only certain sections of a vehicle such as the sides, rear, or hood while integrating the vehicle’s original color into the design. This is a cost-effective way to achieve a bold, branded look without wrapping the entire surface. It allows for creative layouts while still making a strong visual impact.",
   },
-  {
+  { src: "/images/decals-wrap-example.webp",
+    alt: "Decals Wrap Example",
     title: "Decals",
     desc: "Decals are custom graphics such as logos, contact info, or slogans that are individually cut and applied to specific areas of a vehicle. They are a great option for businesses that want brand visibility without covering large surfaces. Decals are affordable, easy to install, and perfect for simple, impactful messaging.",
   },
   {
+    src: "/images/full-vehicle-wrap-example.webp",
+    alt: "Full Vehicle Wrap Example",
     title: "Full Wraps",
     desc: "Full wraps completely cover the entire surface of the vehicle including the sides, rear, hood, and roof. They offer the most visual impact and brand exposure, turning any vehicle into a fully customized, eye-catching advertisement. Full wraps also help protect the vehicle’s original paint from UV rays, dirt, and minor abrasions.",
   },
-];
-
-export const TypesOfWrapImages = [
-  {
-    src: "/images/partial-vehicle-wrap-example.webp",
-    alt: "Partial Vehicle Wrap Example",
-  },
-  { src: "/images/decals-wrap-example.webp", alt: "Decals Wrap Example" },
-  {
-    src: "/images/full-vehicle-wrap-example.webp",
-    alt: "Full Vehicle Wrap Example",
-  },
-];
+]
 
 export const TypeImagesLast = [
   {

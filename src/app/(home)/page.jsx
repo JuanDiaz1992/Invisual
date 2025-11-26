@@ -50,7 +50,7 @@ export default function HomePage() {
 
       <CtaContactForm />
 
-      {/* <TypesOfVehicleWrap /> */}
+      <TypesOfVehicleWrap />
 
       <VehiclesThatCanBeWrappe />
 
