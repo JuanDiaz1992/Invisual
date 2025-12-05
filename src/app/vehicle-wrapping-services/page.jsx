@@ -1,14 +1,20 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Container from "../components/Container";
+
 import AdditionalServicesSection from "../components/ServiceList";
-import ContactForm from "../components/ContactForm";
+
 import Image from "next/image";
-import Reviews from "../components/reviews";
+
 import ButtonLaid from "../components/button";
 import AditionalServicesServices from "../components/AditionalServicesServices";
-import BannerServices from "../components/BannerServices";
+import Banner from "../components/ServicesComponents/banner";
+import CtaForm from "../components/ServicesComponents/ctaForm";
+import CustomerSatisfaction from "../components/ServicesComponents/customerSatisfaction";
+import HowItWorks from "../components/ServicesComponents/howItWorks";
+import Warranty from "../components/ServicesComponents/warranty";
+import Certified from "../components/ServicesComponents/certified";
+
 import {
   BenefitsFleetWrap,
   ProcessInclude,
@@ -138,327 +144,20 @@ const VehicleWrappingServicesPage = (props) => {
 
   return (
     <>
-      {/*************************************** Banner ***********************/}
-      <section>
-        {/*******  Red line top */}
-        <div className="absolute max-h-[65px] h-[65px] rotate-[165deg] overflow-hidden translate-x-[-100px] translate-y-[70px] shadow-[5px_10px_10px_0px_rgba(0,0,0,1)] z-10">
-          <div
-            className={`lg:w-[1600px] w-full h-[100px] degradado float-up-down`}
-          />
-        </div>
-        <Container>
-          <h1 className="lg:text-[100px] font-black italic lg:pt-8 leading-[110px] lg:pb-[15px] text-center relative z-50">
-            {" "}
-            FULL <span className="text-stroke ">WRAP</span>{" "}
-          </h1>
-          <h2 className="text-[25px] capitalize lg:pb-20 font-bold text-center">Unleash <span className="text-[#D92630]">your</span> creativity.</h2>
-          <BannerServices />
-        </Container>
-        {/*******  Red line bottom */}
-        <div className="absolute lg:bottom-[290px] right-0 max-h-[65px] h-[65px] rotate-[165deg] overflow-hidden translate-x-[150px] translate-y-[70px] shadow-[-20px_-15px_20px_-12px_rgba(0,0,0,0.5)] z-10">
-          <div
-            className={`lg:w-[1300px] w-full h-[100px] degradado-inverse `}
-          />
-        </div>
+      <Banner/>
 
-      </section>
+      <AdditionalServicesSection />
 
-      {/*************************************** Aditional Services ***********************/}
-      <section className="lg:mb-[150px]">
-        <AdditionalServicesSection />
-      </section>
+      <CtaForm />
 
-      {/*************************************** CTA Form ***********************/}
-      <section className="text-white">
-        <div
-          style={{
-            boxShadow: "-1px 0px 7px 2px rgba(0,0,0,0.63)",
-          }}
-          className="lg:max-w-[1300px] px-6 lg:px-0 w-full mx-auto"
-        >
-          <div className="bg-[#505050] lg:pt-10 lg:pb-16 lg:px-16 space-y-2 justify-center">
-            <h2 className="uppercase font-bold text-[30px] md:text-[40px] leading-[60px] text-center">
-              Ready to start?
-            </h2>
-            <p className="text-[14px] leading-[25px] text-center">
-              Share your contact information and one of our representatives will
-              contact you soon.
-            </p>
-            <ContactForm align="V" />
-          </div>
-        </div>
-      </section>
+      <CustomerSatisfaction />
 
-      {/*************************************** Customer Satisfaction ***********************/}
-      <section className="relative lg:mt-16 lg:mb-[100px]">
-        <Image
-          src="/images/customer-s-top-lines.webp"
-          alt=" "
-          sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-          srcSet="/images/customer-s-top-lines.webp 768w, /images/customer-s-top-lines.webp 1024w"
-          width={1500}
-          height={400}
-          className={`absolute top-0 right-0 min-w-[680px]`}
-        />
-        <Container className={"flex flex-wrap !max-w-[1300px] lg:pt-64"}>
-          <div className="lg:w-8/12">
-            <h2 className="lg:text-[90px] font-black lg:pb-12 lg:pt-8 leading-[90px] relative z-50 tofinowide">
-              {" "}
-              CUSTOMER{" "}
-              <span className="text-stroke lg:text-[100px]">
-                SATISFACTION
-              </span>{" "}
-            </h2>
-          </div>
-          <div className="lg:w-4/12 flex flex-wrap content-end lg:pb-12">
-            <p>Follow Us</p>
-            <div className="flex flex-wrap lg:pt-4 lg:gap-x-2">
-              <ButtonLaid
-                buttonText={"IN VISUAL SIGNS"}
-                width={164}
-                type="youtube"
-              />
-              <ButtonLaid
-                buttonText={"@invisualsigns"}
-                width={164}
-                type="instagram"
-              />
-            </div>
-          </div>
-          <Reviews />
-        </Container>
-      </section>
+      <HowItWorks />
 
-      {/*************************************** How It Works ***********************/}
-      <section className="relative lg:mb-[100px]">
-        <Image
-          src="/images/how-it-works-vw.webp"
-          alt=" "
-          sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-          srcSet="/images/how-it-works-vw.webp 768w, /images/how-it-works-vw.webp 1024w"
-          width={1500}
-          height={400}
-          className={`absolute top-0 right-0 min-w-[680px]`}
-        />
-        <div className="lg:max-w-[1300px] mx-auto px-6 lg:px-0">
-          <h2 className="lg:text-[90px] font-black lg:pb-12 lg:pt-8 leading-[100px] relative z-50 tofinowide">
-            HOW{" "}
-            <span className="text-stroke lg:text-[120px] lg:block">
-              IT WORKS
-            </span>{" "}
-          </h2>
+      <Warranty />
 
-          <div className="flex lg:mt-20">
-            <div className="lg:w-[461px]">
-              <div className="">
-                <div className="min-h-[444px] process-bg-modifier step-1-bg content-end relative">
-                  <div className="absolute bg-[#980000] opacity-80 pointer-events-none h-[65px] bottom-0 w-full"></div>
-                  <div className="text-black flex">
-                    <p
-                      className="lg:min-w-[92px] lg:min-h-[83px] text-center text-white content-center lg:text-[70px] leading-[70px] font-black bg-[linear-gradient(346deg,#1A1A1A_13%,#444242_72.49%)] opcity-100 z-10"
-                      style={{ transform: "skew(-12deg)" }}
-                    >
-                      1
-                    </p>
-                    <p className=" w-full z-0 lg:-ms-[30px] lg:ps-12 lg:pt-6 content-center text-white lg:text-[25px] font-bold">
-                      Consultation & Quote
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <p className="text-white lg:pt-8 lg:max-w-[395px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderi.
-              </p>
-            </div>
+      <Certified />
 
-            <div className="lg:w-[461px] lg:-ms-20">
-              <p className="text-white lg:pt-32 lg:ps-20 lg:pb-8 lg:max-w-[450px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderi.
-              </p>
-              <div className="">
-                <div className="min-h-[444px] process-bg-modifier step-2-bg content-top relative lg:ps-16">
-                  <div className="absolute bg-[#980000] opacity-80 pointer-events-none h-[65px] top-0 w-full"></div>
-                  <div className="text-black flex">
-                    <p
-                      className="lg:min-w-[92px] lg:min-h-[83px] text-center text-white lg:text-[70px] leading-[70px] font-black bg-[linear-gradient(346deg,#1A1A1A_13%,#444242_72.49%)] opcity-100 z-10"
-                      style={{ transform: "skew(-12deg)" }}
-                    >
-                      2
-                    </p>
-                    <p className=" w-full z-0 lg:-ms-[30px] lg:ps-12 lg:pb-4 content-center text-white lg:text-[25px] font-bold">
-                      Design & Approval
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:w-[461px] lg:ms-4">
-              <div className="">
-                <div className="min-h-[444px] process-bg-modifier step-3-bg content-end relative">
-                  <div className="absolute bg-[#980000] opacity-80 pointer-events-none h-[65px] bottom-0 w-full"></div>
-                  <div className="text-black flex">
-                    <p
-                      className="lg:min-w-[92px] lg:min-h-[83px] text-center text-white content-center lg:text-[70px] leading-[70px] font-black bg-[linear-gradient(346deg,#1A1A1A_13%,#444242_72.49%)] opcity-100 z-10"
-                      style={{ transform: "skew(-12deg)" }}
-                    >
-                      3
-                    </p>
-                    <p className=" w-full z-0 lg:-ms-[30px] lg:ps-12 lg:pt-6 content-center text-white lg:text-[25px] font-bold">
-                      Installation & Delivery
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <p className="text-white lg:pt-8 lg:max-w-[395px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderi.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/*************************************** Warranty ***********************/}
-      <section className="relative lg:mb-[100px]">
-        <Image
-          ref={ref1}
-          src="/images/warranty-truck.webp"
-          alt="Commercial fleet wrap in Glen Burnie"
-          sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-          srcSet="/images/warranty-truck.webp 768w, /images/warranty-truck.webp 1024w"
-          width={1040}
-          height={840}
-          className={`lg:mb-[-110px] absolute top-10 left-20 ${
-            visible1 ? `face-in-left` : ``
-          }`}
-        />
-        <Image
-          ref={ref2}
-          src="/images/warranty-red-arrow.webp"
-          alt="Commercial fleet wrap in Glen Burnie"
-          sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-          srcSet="/images/warranty-red-arrow.webp 768w, /images/warranty-red-arrow.webp 1024w"
-          width={660}
-          height={662}
-          className={`lg:mb-[-110px] absolute top-[115px] left-0 w-[280px] lg:w-[660px] ${
-            visible2 ? `face-in-left-delay-500` : ``
-          }`}
-        />
-
-        <div className="container mx-auto lg:max-w-[1300px] relative flex">
-          <div className="flex flex-wrap lg:w-full">
-            <h2 className="lg:text-[90px] font-black lg:pb-12 lg:pt-8 leading-[100px] relative z-50 tofinowide uppercase text-end w-full">
-              Warranty{" "}
-            </h2>
-            <div className="lg:w-full justify-end flex lg:pt-12">
-              <Image
-                src="/images/star-logo-icon.svg"
-                alt="Commercial fleet wrap in Glen Burnie"
-                sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-                srcSet="/images/star-logo-icon.svg 768w, /images/star-logo-icon.svg 1024w"
-                width={483}
-                height={410}
-                className={` w-[280px] lg:w-[483px]`}
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap z-50 relative lg:ps-[10%]">
-          <div className="lg:w-5/12">
-            <p className="lg:max-w-[34rem] lg:ps-16 font-bold lg:pt-20">
-              Your peace of mind is our priority, so we back our services with a
-              robust 3-month Warranty. We stand behind our work, offering
-              warranties that cover any problems with the installation, such as
-              bubbles, lifting, or cracking of the vinyl.
-            </p>
-          </div>
-          <div className="lg:w-7/12 bg-[#1A1A1A] lg:-skew-x-12">
-            <div className="opacity-70 lg:min-h-[44px] bg-gradient-to-b from-[#761010] from-[15%] to-transparent to-[80%]"></div>
-            <p className=" lg:ps-24 lg:py-4 lg:skew-x-12 lg:max-w-[42rem]">
-              Our team is more than happy to address and resolve any issues that
-              may arise. In the unlikely event of a defect or problem with the
-              installation, our team is committed to resolving it promptly and
-              to your complete satisfaction. Our warranty is a testament to our
-              confidence in the quality of our work and our dedication to your
-              success. Trust in our expertise, and rest assured that your
-              project is in capable hands.
-            </p>
-            <div className="opacity-70 lg:min-h-[44px] bg-gradient-to-t from-[#761010] from-[15%] to-transparent to-[80%]"></div>
-          </div>
-        </div>
-      </section>
-
-      {/*************************************** Certified ***********************/}
-      <section className="">
-        <div className="container mx-auto lg:max-w-[1300px] relative flex">
-          <div className="lg:w-5/12 content-center lg:pt-16">
-            <h2 className="font-bold lg:text-[40px] uppercase">
-              Certified Technicians
-            </h2>
-            <p className="">
-              At InVisual Signs, expertise matters, and our team of Certified
-              Technicians brings unparalleled skill and knowledge to every
-              project. Holding certifications with 3M and Avery Dennison, our
-              technicians are equipped to handle even the most complex
-              installations and designs.
-              <br />
-              These specific certifications demonstrate a commitment to ongoing
-              education and adherence to the utmost industry standards,
-              employing top-of-the-line equipment and products from renowned
-              brands such as Roland, 3M, and Avery Dennison.
-            </p>
-
-            <div className="flex flex-wrap gap-x-6 lg:pt-16">
-              <p className="lg:max-w-[18rem] font-bold text-[28px] italic leading-[28px]">
-                CERTIFICATIONS AND TOOLS
-              </p>
-              <Image
-                src="/images/avery-dennison-logo-bw.svg"
-                alt=" "
-                sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-                srcSet="/images/avery-dennison-logo-bw.svg 768w, /images/avery-dennison-logo-bw.svg 1024w"
-                width={150}
-                height={53}
-                className={``}
-              />
-              <Image
-                src="/images/3M_wordmark.svg"
-                alt=" "
-                sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-                srcSet="/images/3M_wordmark.svg 768w, /images/3M_wordmark.svg 1024w"
-                width={102}
-                height={53}
-                className={``}
-              />
-            </div>
-          </div>
-
-          <div className="lg:w-7/12">
-            <Image
-              src="/images/certified-technicians-in-carwrap.webp"
-              alt=" "
-              sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-              srcSet="/images/certified-technicians-in-carwrap.webp, /images/certified-technicians-in-carwrap.webp 1024w"
-              width={910}
-              height={894}
-              className={`lg:-ms-10 lg:max-w-[910px] lg:w-[910px] w-full`}
-            />
-          </div>
-        </div>
-      </section>
 
       {/*************************************** Commercial Vehicle Wrap ***********************/}
       <section className="relative lg:mb-[100px]">

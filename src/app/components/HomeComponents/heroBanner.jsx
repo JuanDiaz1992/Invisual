@@ -12,11 +12,11 @@ export default function HeroBanner() {
 
       {/*******  Inner secion */}
       <div className="container lg:max-w-[1200px] mx-auto pt-50 pb-8 relative">
-        <h1 className="text-[22px] font-bold relative">
+        <h1 className="text-[22px] font-bold relative z-20">
           Maryland, Virginia, & D.C
           <span className="italic font-black lg:text-[65px] block uppercase lg:leading-[70px] tofinowide relative">
             Commercial Vehicle{" "}
-            <span className="block relative z-50">Wraps Services</span>
+            <span className="block relative z-20">Wraps Services</span>
           </span>
         </h1>
 
@@ -130,11 +130,11 @@ export default function HeroBanner() {
             srcSet="/images/commercial-fleet-wrap.webp 768w, /images/commercial-fleet-wrap.webp 1024w"
             width={860}
             height={343}
-            className="z-20 relative lg:w-[860px] lg:min-w-[400px] me-[-130px] mt-[-210px]"
+            className="z-10 relative lg:w-[860px] lg:min-w-[400px] me-[-130px] mt-[-210px]"
           />
         </div>
       </div>
-      <div className="relative z-50">
+      <div className="relative z-20">
         <BrandingCarousel />
       </div>
       {/*******  Red line bottom */}

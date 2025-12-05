@@ -1,4 +1,3 @@
-// components/BannerServices.js
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,132 +7,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function BannerServices({ title, subtitle, imageUrl }) {
+export default function BannerServices({ slidesData }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [activeOption, setActiveOption] = useState("image2");
   const swiperRef = useRef(null);
-
-  const slidesData = [
-    {
-      id: 1,
-      imagebase:
-        "/images/vehicle-wrapping-services/banner/full-wrap-svu-base.webp",
-      image1: "/images/vehicle-wrapping-services/banner/full-wrap-suv-1.webp",
-      image2: "/images/vehicle-wrapping-services/banner/full-wrap-suv-2.webp",
-      image3: "/images/vehicle-wrapping-services/banner/full-wrap-suv-3.webp",
-      imageSelectOption1:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-suv-1.webp",
-      imageSelectOption2:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-suv-2.webp",
-      imageSelectOption3:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-suv-3.webp",
-      dotImage:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-suv-3.webp",
-      dot_width: "177px",
-      dot_height: "93px",
-      title: "Sedan",
-      name_wrapper1: "Spot graphics",
-      name_wrapper2: "Full Wrap",
-      name_wrapper3: "Full Wrap",
-    },
-    {
-      id: 2,
-      imagebase:
-        "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
-      image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
-      image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
-      image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
-      imageSelectOption1:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
-      imageSelectOption2:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
-      imageSelectOption3:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
-      dotImage:
-        "/images/vehicle-wrapping-services/banner/full-wrap-dot-pick-up-truck.webp",
-      dot_width: "168.89px",
-      dot_height: "87px",
-      title: "Pick-Up Trucks",
-      name_wrapper1: "Spot graphics",
-      name_wrapper2: "Full Wrap",
-      name_wrapper3: "Full Wrap",
-    },
-    {
-      id: 3,
-      imagebase:
-        "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
-      image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
-      image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
-      image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
-      imageSelectOption1:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
-      imageSelectOption2:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
-      imageSelectOption3:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
-      dotImage:
-        "/images/vehicle-wrapping-services/banner/full-wrap-dot-van.webp",
-      dot_width: "152.663px",
-      dot_height: "96.885px",
-      title: "VAN",
-      name_wrapper1: "Spot graphics",
-      name_wrapper2: "Full Wrap",
-      name_wrapper3: "Full Wrap",
-    },
-    {
-      id: 4,
-      imagebase:
-        "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
-      image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
-      image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
-      image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
-      imageSelectOption1:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
-      imageSelectOption2:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
-      imageSelectOption3:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
-      dotImage:
-        "/images/vehicle-wrapping-services/banner/full-wrap-dot-box-trucks.webp",
-      dot_width: "146px",
-      dot_height: "108.986px",
-      title: "Box Trucks",
-      name_wrapper1: "Spot graphics",
-      name_wrapper2: "Full Wrap",
-      name_wrapper3: "Full Wrap",
-    },
-    {
-      id: 5,
-      imagebase:
-        "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
-      image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
-      image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
-      image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
-      imageSelectOption1:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
-      imageSelectOption2:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
-      imageSelectOption3:
-        "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
-      dotImage:
-        "/images/vehicle-wrapping-services/banner/full-wrap-dot-food-truc.webp",
-      dot_width: "173px",
-      dot_height: "93.794px",
-      title: "Food Trucks",
-      name_wrapper1: "Spot graphics",
-      name_wrapper2: "Full Wrap",
-      name_wrapper3: "Full Wrap",
-    },
-    
-  ];
 
   const [selectedImage, setSelectedImage] = useState(null);
   const [resetId, setResetId] = useState(0);
   const [isInitialized, setIsInitialized] = useState(false);
   const [imagesPreloaded, setImagesPreloaded] = useState(false);
 
-  // Ocultar botones de navegación por defecto de forma específica
   useEffect(() => {
     if (!swiperRef.current) return;
 
@@ -141,32 +25,29 @@ export default function BannerServices({ title, subtitle, imageUrl }) {
       const swiperContainer = swiperRef.current;
       if (!swiperContainer) return;
 
-      // Buscar solo dentro de este componente específico
-      const prevBtn = swiperContainer.querySelector('.swiper-button-prev');
-      const nextBtn = swiperContainer.querySelector('.swiper-button-next');
-      
+      const prevBtn = swiperContainer.querySelector(".swiper-button-prev");
+      const nextBtn = swiperContainer.querySelector(".swiper-button-next");
+
       if (prevBtn) {
-        prevBtn.style.display = 'none';
+        prevBtn.style.display = "none";
       }
       if (nextBtn) {
-        nextBtn.style.display = 'none';
+        nextBtn.style.display = "none";
       }
     };
 
-    // Ejecutar inmediatamente y después de un pequeño delay por si Swiper los crea después
     hideDefaultButtons();
     const timer = setTimeout(hideDefaultButtons, 100);
 
     return () => clearTimeout(timer);
   }, []);
 
-  // Funciones para los botones custom
   const handlePrev = () => {
     if (isLoading || !swiperRef.current?.swiper) return;
-    
+
     const swiper = swiperRef.current.swiper;
     swiper.slidePrev();
-    
+
     // Reset a image2 cuando cambia de slide
     const newIndex = swiper.activeIndex;
     const slide = slidesData[newIndex];
@@ -178,10 +59,10 @@ export default function BannerServices({ title, subtitle, imageUrl }) {
 
   const handleNext = () => {
     if (isLoading || !swiperRef.current?.swiper) return;
-    
+
     const swiper = swiperRef.current.swiper;
     swiper.slideNext();
-    
+
     // Reset a image2 cuando cambia de slide
     const newIndex = swiper.activeIndex;
     const slide = slidesData[newIndex];
@@ -264,10 +145,10 @@ export default function BannerServices({ title, subtitle, imageUrl }) {
 
   const handleSlideChange = (index) => {
     if (isLoading || !swiperRef.current?.swiper) return;
-    
+
     const swiper = swiperRef.current.swiper;
     swiper.slideTo(index);
-    
+
     const slide = slidesData[index];
     if (slide && slide.image2) {
       setSelectedImage(slide.image2);
@@ -330,7 +211,6 @@ export default function BannerServices({ title, subtitle, imageUrl }) {
                         </p>
                       </div>
 
-                      {/* Opción 2 */}
                       <div
                         className={`flex flex-col items-center justify-center gap-[17px] cursor-pointer transition-all duration-300 ${
                           activeOption === "image2"
@@ -350,7 +230,6 @@ export default function BannerServices({ title, subtitle, imageUrl }) {
                         </p>
                       </div>
 
-                      {/* Opción 3 */}
                       <div
                         className={`flex flex-col items-center justify-center gap-[17px] cursor-pointer transition-all duration-300 ${
                           activeOption === "image3"
@@ -443,7 +322,7 @@ export default function BannerServices({ title, subtitle, imageUrl }) {
             </svg>
           </button>
 
-          <button 
+          <button
             className="cursor-pointer transition-opacity duration-300 hover:opacity-80 disabled:opacity-30"
             onClick={handleNext}
             disabled={isLoading}

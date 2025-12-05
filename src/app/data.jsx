@@ -448,3 +448,138 @@ export const ProcessInclude = [
   "Precision installation by certified technician",
   "Quality checks and final walk through",
 ];
+
+
+export const BannerSlidesData =[
+      {
+        id: 1,
+        imagebase:
+          "/images/vehicle-wrapping-services/banner/full-wrap-svu-base.webp",
+        image1: "/images/vehicle-wrapping-services/banner/full-wrap-suv-1.webp",
+        image2: "/images/vehicle-wrapping-services/banner/full-wrap-suv-2.webp",
+        image3: "/images/vehicle-wrapping-services/banner/full-wrap-suv-3.webp",
+        imageSelectOption1:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-suv-1.webp",
+        imageSelectOption2:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-suv-2.webp",
+        imageSelectOption3:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-suv-3.webp",
+        dotImage:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-suv-3.webp",
+        dot_width: "177px",
+        dot_height: "93px",
+        title: "Sedan",
+        name_wrapper1: "Spot graphics",
+        name_wrapper2: "Full Wrap",
+        name_wrapper3: "Full Wrap",
+      },
+      {
+        id: 2,
+        imagebase:
+          "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
+        image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
+        image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
+        image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
+        imageSelectOption1:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
+        imageSelectOption2:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
+        imageSelectOption3:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
+        dotImage:
+          "/images/vehicle-wrapping-services/banner/full-wrap-dot-pick-up-truck.webp",
+        dot_width: "168.89px",
+        dot_height: "87px",
+        title: "Pick-Up Trucks",
+        name_wrapper1: "Spot graphics",
+        name_wrapper2: "Full Wrap",
+        name_wrapper3: "Full Wrap",
+      },
+      {
+        id: 3,
+        imagebase:
+          "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
+        image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
+        image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
+        image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
+        imageSelectOption1:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
+        imageSelectOption2:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
+        imageSelectOption3:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
+        dotImage:
+          "/images/vehicle-wrapping-services/banner/full-wrap-dot-van.webp",
+        dot_width: "152.663px",
+        dot_height: "96.885px",
+        title: "VAN",
+        name_wrapper1: "Spot graphics",
+        name_wrapper2: "Full Wrap",
+        name_wrapper3: "Full Wrap",
+      },
+      {
+        id: 4,
+        imagebase:
+          "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
+        image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
+        image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
+        image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
+        imageSelectOption1:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
+        imageSelectOption2:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
+        imageSelectOption3:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
+        dotImage:
+          "/images/vehicle-wrapping-services/banner/full-wrap-dot-box-trucks.webp",
+        dot_width: "146px",
+        dot_height: "108.986px",
+        title: "Box Trucks",
+        name_wrapper1: "Spot graphics",
+        name_wrapper2: "Full Wrap",
+        name_wrapper3: "Full Wrap",
+      },
+      {
+        id: 5,
+        imagebase:
+          "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
+        image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
+        image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
+        image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
+        imageSelectOption1:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
+        imageSelectOption2:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
+        imageSelectOption3:
+          "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
+        dotImage:
+          "/images/vehicle-wrapping-services/banner/full-wrap-dot-food-truc.webp",
+        dot_width: "173px",
+        dot_height: "93.794px",
+        title: "Food Trucks",
+        name_wrapper1: "Spot graphics",
+        name_wrapper2: "Full Wrap",
+        name_wrapper3: "Full Wrap",
+      },
+]
+
+
+export const TypesOfWrapImages = [
+  { src: '/images/partial-vehicle-wrap-example.webp', alt: 'Partial Vehicle Wrap Example' },
+  { src: '/images/decals-wrap-example.webp', alt: 'Decals Wrap Example' },
+  { src: '/images/full-vehicle-wrap-example.webp', alt: 'Full Vehicle Wrap Example' },
+]
+export const TypesOfWrapText = [
+  {
+    title: 'Partial Wrap',
+    desc: 'Partial wraps cover only certain sections of a vehicle such as the sides, rear, or hood while integrating the vehicle’s original color into the design. This is a cost-effective way to achieve a bold, branded look without wrapping the entire surface. It allows for creative layouts while still making a strong visual impact.'
+  },
+  {
+    title: 'Decals',
+    desc: 'Decals are custom graphics such as logos, contact info, or slogans that are individually cut and applied to specific areas of a vehicle. They are a great option for businesses that want brand visibility without covering large surfaces. Decals are affordable, easy to install, and perfect for simple, impactful messaging.'
+  },
+  {
+    title: 'Full Wraps',
+    desc: 'Full wraps completely cover the entire surface of the vehicle including the sides, rear, hood, and roof. They offer the most visual impact and brand exposure, turning any vehicle into a fully customized, eye-catching advertisement. Full wraps also help protect the vehicle’s original paint from UV rays, dirt, and minor abrasions.'
+  },
+]
