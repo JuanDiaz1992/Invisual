@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useState } from "react";
 import { useSwipeable } from "react-swipeable";
@@ -100,12 +100,11 @@ const SliderFleetWrap = ({ services }) => {
               <div className="lg:w-7/12">
                 <Image
                   src={`/images/${review.img}`}
-                  alt=" "
-                  sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-                  srcSet="/images/fleet-wrap-bottom-lines.svg 768w, /images/fleet-wrap-bottom-lines.svgp 1024w"
+                  alt={review.title || "Fleet wrap service example"}
+                  sizes="(min-width: 1024px) 588px, 100vw"
                   width={588}
                   height={514}
-                  className={`lg:w-full lg:min-w-[588px] min-w-[280px] z-10 pointer-events-none`}
+                  className={`lg:w-full lg:min-w-[588px] min-w-[280px] z-10 pointer-events-none object-cover`} // Agregué object-cover por seguridad
                 />
               </div>
               <div className="lg:w-5/12 ps-6 lg:pt-10 pt-6 pe-8">

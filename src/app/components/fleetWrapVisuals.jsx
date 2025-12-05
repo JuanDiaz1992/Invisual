@@ -5,12 +5,13 @@ import Image from "next/image";
 export default function FleetWrapVisuals() {
   const [visible3, setVisible3] = useState(false);
   const ref3 = useRef(null);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            if (entry.target === ref3.current) setVisible3(true);
+            setVisible3(true);
           }
         });
       },
@@ -23,19 +24,22 @@ export default function FleetWrapVisuals() {
   }, []);
 
   return (
-    <div className="relative">
-      <div className="">
-        <div ref={ref3} className={`${visible3 ? "degradado-left" : ``}`}></div>
-        <Image
-          src="/images/fleet-wrap-top-lines.svg"
-          alt=" "
-          sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-          srcSet="/images/fleet-wrap-top-lines.svg 768w, /images/fleet-wrap-top-lines.svgp 1024w"
-          width={1500}
-          height={670}
-          className={`lg:w-full z-10 ${visible3 ? "opacity-100" : "opacity-0"}`}
-        />
-      </div>
+    <div className="relative w-full">
+      <div
+        ref={ref3}
+        className={`absolute inset-0 w-full h-full z-0 pointer-events-none transition-opacity duration-700 ${
+          visible3 ? "degradado-left opacity-100" : "opacity-0"
+        }`}
+      ></div>
+
+      <Image
+        src="/images/fleet-wrap-top-lines.svg"
+        alt=""
+        sizes="100vw"
+        width={1500}
+        height={670}
+        className="lg:w-full z-10 relative"
+      />
     </div>
   );
 }
