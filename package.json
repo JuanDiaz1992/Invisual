@@ -12,10 +12,10 @@
     "@emailjs/browser": "^4.4.1",
     "framer-motion": "^12.23.24",
     "html-entities": "^2.6.0",
-    "next": "15.3.2",
-    "react": "^19.0.0",
+    "next": "^16.0.7",
+    "react": "^19.2.1",
     "react-compare-image": "^3.5.5",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.2.1",
     "react-swipeable": "^7.0.2",
     "swiper": "^11.2.10"
   },
@@ -23,7 +23,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.3.2",
+    "eslint-config-next": "^16.0.7",
     "tailwindcss": "^4"
   }
 }
