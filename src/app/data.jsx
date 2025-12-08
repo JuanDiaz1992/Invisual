@@ -710,3 +710,14 @@ export const slidesGraphicDesignServices = [
       logoHeight: 640,
     },
   ];
+
+
+export const sections = [
+  { id: "services", label: "Services" },
+  { id: "satisfaction", label: "Customer Reviews" },
+  { id: "why", label: "Why Choose Us?" },
+  { id: "benefits", label: "Beneficts of Vehicle Wraps Services" },
+  { id: "graphic", label: "Our Projects" },
+  { id: "additional", label: "Additional Services" },
+  { id: "types", label: "Types of Vehicles Wrapped" },
+];

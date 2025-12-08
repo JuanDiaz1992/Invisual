@@ -1,15 +1,7 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
+import { sections } from "../data";
 
-const sections = [
-  { id: "services", label: "Services" },
-  { id: "satisfaction", label: "Customer Reviews" },
-  { id: "why", label: "Why Choose Us?" },
-  { id: "benefits", label: "Beneficts of Vehicle Wraps Services" },
-  { id: "graphic", label: "Our Projects" },
-  { id: "additional", label: "Additional Services" },
-  { id: "types", label: "Types of Vehicles Wrapped" },
-];
 
 export default function ScrollSpyMenu() {
   const [activeSection, setActiveSection] = useState(null);

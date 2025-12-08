@@ -57,10 +57,7 @@ const Header = () => {
           >
             <ul className="flex gap-8 justify-center h-full items-center">
               <li>
-                <Link
-                  href="/"
-                  className="hover:text-red-600 transition-colors"
-                >
+                <Link href="/" className="hover:text-red-600 transition-colors">
                   Home
                 </Link>
               </li>
@@ -99,12 +96,21 @@ const Header = () => {
 
         <div className="flex items-center gap-1">
           <div className="relative w-[41px] h-[41px]">
-            <Image
-              src="/images/map-icon.svg"
-              alt=""
-              fill
-              className="object-contain"
-            />
+            <a
+              href="https://www.google.com/maps/place/15129+Marlboro+Pike,+Upper+Marlboro,+MD+20772,+EE.+UU./@38.8195844,-76.742915,19z/data=!3m1!4b1!4m6!3m5!1s0x89b79405a7fa99f5:0x7457416d17ebaa5c!8m2!3d38.8195844!4d-76.7422713!16s%2Fg%2F11fk2pbkzb?entry=tts"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Find us on Google Maps"
+              title="View location on Google Maps"
+              className="relative w-[40px] h-[40px] block"
+            >
+              <Image
+                src="/images/map-icon.svg"
+                alt=""
+                fill
+                className="object-contain"
+              />
+            </a>
           </div>
           <ButtonLaid
             buttonText={"240-664-1629"}

@@ -167,6 +167,11 @@ body {
   -webkit-text-stroke-width: 2px;
 -webkit-text-stroke-color: #FFF;
 }
+@media only screen and (max-width: 768px){
+  .text-stroke {
+  -webkit-text-stroke-width: 1px;
+}
+}
 
 .bg-degradado {
   background-image: url('/images/bg-services-content.png');
@@ -432,6 +437,10 @@ body {
 .about-banner {
   background-image: url('/images/banner-bg-about-resp.webp');
   background-position: bottom center;
+}
+
+.satisfaction {
+  background-image: url('/images/customers-satisfaction-bg-movil.webp');
 }
 
 .our-mission {
