@@ -16,7 +16,7 @@ export default function WhyChose() {
     })),
   };
   return (
-    <section id="why" className="min-h-screen text-white px-20 home">
+    <section id="why" className="min-h-screen text-white px-20 home mt-[100px]">
       <div className="container lg:max-w-[1200px] mx-auto">
         <h2 className="lg:text-[100px] font-black italic lg:pb-20 lg:pt-8 leading-[110px] text-center">
           <span className="text-stroke block">WHY CHOOSE</span> INVISUAL SINGS?

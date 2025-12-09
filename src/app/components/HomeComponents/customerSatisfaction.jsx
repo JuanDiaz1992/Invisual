@@ -4,19 +4,26 @@ export default function CustomerSatisfaction() {
   return (
     <section
       id="satisfaction"
-      className="min-h-screen text-white satisfaction lg:mt-[-120px]"
+      className="min-h-screen text-white satisfaction xl:mt-[-120px] pb-[157px] xl:pb-0 mt-[-264px] pt-[193px] pt:xl-0"
     >
-      <div className="container mx-auto lg:max-w-[1200px] lg:pt-24 px-[24px] xl:px-0">
-        <h2 className="lg:text-[90px] font-black italic lg:pb-8 lg:leading-[95px] ">
+      <div className="container mx-auto xl:max-w-[1200px] xl:pt-24 px-[24px] xl:px-0 mt-[40px] xl:mt-0">
+        <h2 className="text-[40px] leading-[40px] xl:text-[90px] font-black italic pb-8 xl:leading-[95px] ">
           CUSTOMER{" "}
-          <span className="text-stroke block lg:text-[110px]">
+          <span className="text-stroke block xl:text-[110px]">
             SATISFACTION
           </span>
         </h2>
-        <div className="w-full flex justify-end">
-          <div className="lg:w-4/12 flex flex-wrap content-end lg:pt-[67px]">
-            <p className="text-[22px] font-bold relative ml-4">Follow Us</p>
-            <div className="flex flex-wrap lg:pt-4 lg:gap-x-2">
+        <p className="text-sm pointer-events-none select-none block max-w-[312px] md:max-w-[500px] xl:hidden leading-[22px] mb-[27px]">
+          We do more than just car wrapping; we focus on understanding our
+          clients needs, creating their branding and ensuring their absolute
+          satisfaction. <br /> <br /> We invite you to see what some of our
+          clients have to say about our service and to learn more about our
+          work.
+        </p>
+        <div className="w-full flex xl:justify-end">
+          <div className="flex flex-wrap content-end xl:pt-[67px] max-w-[370px] xl:max-w-full xl:w-4/12 mb-[53px] xl:mb-0">
+            <p className="text-[22px] font-bold relative w-full xl:w-fit mb-[17px] xl:mb-0">Follow Us</p>
+            <div className="flex flex-wrap gap-y-4 xl:pt-4 xl:gap-x-2">
               <ButtonLaid
                 buttonText={"IN VISUAL SIGNS"}
                 width={164}
@@ -31,7 +38,7 @@ export default function CustomerSatisfaction() {
           </div>
         </div>
       </div>
-      <div className="lg:mt-[44px] container mx-auto lg:max-w-[1200px] lg:pb-24">
+      <div className="xl:mt-[44px] container mx-auto xl:max-w-[1200px] xl:pb-0">
         <HomeReviews />
       </div>
     </section>

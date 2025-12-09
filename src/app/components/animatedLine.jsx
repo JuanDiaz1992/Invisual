@@ -29,7 +29,7 @@ export default function AnimatedLine({ classes, children }) {
 
   return (
     <div
-      className={`relative z-20  mb-[-100px] md:mb-0  w-full lg:w-[681px] h-[332px] overflow-hidden flex flex-wrap ${classes}`}
+      className={`relative z-20  lg:mb-0  w-full lg:w-[681px] h-[332px] overflow-hidden flex flex-wrap ${classes}`}
     >
       <div className="absolute inset-0" />
       <div

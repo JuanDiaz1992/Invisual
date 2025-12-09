@@ -10,7 +10,7 @@ export default function HeroBanner() {
       {/******* Red line top (Decorativo) */}
       <div className="hidden md:flex absolute max-h-[65px] h-[65px] rotate-[165deg] overflow-hidden translate-x-[-100px] translate-y-[70px] shadow-[5px_10px_10px_0px_rgba(0,0,0,1)] z-10">
         <div
-          className={`lg:w-[1600px] w-full h-[100px] degradado float-up-down`}
+          className={`xl:w-[1600px] w-full h-[100px] degradado float-up-down`}
         />
       </div>
 
@@ -24,10 +24,10 @@ export default function HeroBanner() {
       />
 
       {/******* Inner section */}
-      <div className="container lg:max-w-[1200px] mx-auto px-[24px] lg:px-0 pt-[45px] lg:pt-50 pb-8 relative">
+      <div className="container xl:max-w-[1200px] mx-auto px-[24px] xl:px-0 pt-[45px] xl:pt-50 pb-8 relative">
         <h1 className="text-[22px] font-bold relative z-20 md:text-left text-center">
           Maryland, Virginia, & D.C
-          <span className="italic font-black text-[30px] md:text-[38px] lg:text-[65px] block uppercase lg:leading-[70px] tofinowide relative">
+          <span className="italic font-black text-[30px] md:text-[38px] xl:text-[65px] block uppercase xl:leading-[70px] tofinowide relative">
             <span className="block relative z-10">Commercial Vehicle <span className="md:hidden"> Wraps</span></span>
             <span className="hidden md:inline"> Wraps Services</span>
           </span>
@@ -35,7 +35,7 @@ export default function HeroBanner() {
 
         <div className="flex gap-2 pt-8 w-full md:w-[41.5%]">
           {/* SVG Decorativo */}
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="43"
@@ -148,7 +148,7 @@ export default function HeroBanner() {
             srcSet="/images/commercial-fleet-wrap.webp 768w, /images/commercial-fleet-wrap.webp 1024w"
             width={860}
             height={343}
-            className="z-10 relative lg:w-[860px] lg:min-w-[400px] lg:me-[-190px] mt-5 md:mt-[-190px] lg:mt-[-250px] object-contain"
+            className="z-10 relative xl:w-[860px] xl:min-w-[400px] xl:me-[-190px] mt-5 xl:mt-[-250px] object-contain"
           />
         </div>
       </div>
@@ -158,13 +158,13 @@ export default function HeroBanner() {
       </div>
 
       {/******* Red line bottom */}
-      <div className="absolute lg:bottom-[290px] right-0 max-h-[65px] h-[65px] rotate-[165deg] overflow-hidden translate-x-[150px] translate-y-[70px] shadow-[-20px_-15px_20px_-12px_rgba(0,0,0,0.5)] z-10">
-        <div className={`lg:w-[1300px] w-full h-[100px] degradado-inverse `} />
+      <div className="absolute xl:bottom-[290px] right-0 max-h-[65px] h-[65px] rotate-[165deg] overflow-hidden translate-x-[150px] translate-y-[70px] shadow-[-20px_-15px_20px_-12px_rgba(0,0,0,0.5)] z-10">
+        <div className={`xl:w-[1300px] w-full h-[100px] degradado-inverse `} />
       </div>
 
       {/******* Links de Movil */}
       <nav
-        className="w-full flex md:hidden flex-col px-[24px] items-center z-10 relative"
+        className="w-full flex xl:hidden flex-col px-[24px] items-center z-10 relative"
         aria-label="Mobile service navigation"
       >
         <div className="w-full flex justify-end pt-[20px]">
