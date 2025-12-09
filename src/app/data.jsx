@@ -92,19 +92,22 @@ export const reviews = [
     title: "Trailer wrap Grace church",
     img: "/images/grace-church.webp",
     text: '"Just got finished up with InVisual Signs. Just an incredible wrap, beyond my expectations. If you are a small business looking to get your fleet wrapped, and you have one vehicle like myself, please come see them!"',
-    video: "/images/ritas.svg",
+    video: "/videos/video3.mp4",
+    youtubeLink:"https://www.youtube.com/shorts/fwqVJSfYnZA"
   },
   {
     title: "Partial Wrap",
     img: "/images/partial-wrap.webp",
     text: '"Just got finished up with InVisual Signs. Just an incredible wrap, beyond my expectations. If you are a small business looking to get your fleet wrapped, and you have one vehicle like myself, please come see them!"',
-    video: "/images/ritas.svg",
+    video: "/videos/video1.mp4",
+    youtubeLink:"https://www.youtube.com/shorts/MoGH5W4Y4IA"
   },
   {
     title: "Box truck vehicle wrap",
     img: "/images/box-truck.webp",
     text: '"Just got finished up with InVisual Signs. Just an incredible wrap, beyond my expectations. If you are a small business looking to get your fleet wrapped, and you have one vehicle like myself, please come see them!"',
-    video: "/images/ritas.svg",
+    video: "/videos/video2.mp4",
+    youtubeLink:"https://www.youtube.com/shorts/OGZ4uA4SnjQ"
   },
 ];
 
