@@ -297,7 +297,7 @@ const HomeReviews = () => {
         </Swiper>
       </div>
 
-      <div className="xl:hidden">
+      <div className="xl:hidden mb-[-92px]">
         <div className="relative">
           <Swiper
             modules={[Pagination]}

@@ -5,8 +5,6 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 export default function SliderHomeWhyChose() {
-  let averylogo = "/images/avery-dennison-logo.webp";
-  let treemlog = "/images/treemlog.webp";
   const grandes = [
     "/images/dc-police-union-big.webp",
     "/images/favor-big.webp",
@@ -69,8 +67,8 @@ export default function SliderHomeWhyChose() {
   }
 
   return (
-    <div className="w-full flex ">
-      <div className="w-4/12">
+    <div className="w-full flex flex-col xl:flex-row">
+      <div className="w-full xl:w-4/12 h-[140px] xl:h-fit order-3 xl:order-1">
         {/************* Seccion de Miniaturas con Swiper *************/}
         <div className="relative mx-auto mt-4">
           <div className="relative overflow-hidden w-full h-[137px] select-none">
@@ -129,17 +127,25 @@ export default function SliderHomeWhyChose() {
           </div>
         </div>
 
-        <div className="lg:pt-8 flex flex-wrap gap-x-[15px]">
-          <p className="lg:text-[25px] mb-[33px]">
+        <div className="lg:pt-8 flex-wrap gap-x-[15px] hidden xl:flex">
+          <p className="lg:text-[25px] mb-[33px] ">
             <span className="font-black tofinowide">Woman-Owned</span> Business{" "}
             <span className="block font-bold">Certifications and Tools</span>
           </p>
-          <img src={averylogo} alt="Avery dennison logo" className="w-6/12 max-w-[165.8px] object-contain"/>
-          <img src={treemlog} alt="3M logo" className="w-6/12 max-w-[120.04px] object-contain"/>
+          <img
+            src="/images/avery-dennison-logo.webp"
+            alt="Avery dennison logo"
+            className="w-6/12 max-w-[165.8px] object-contain"
+          />
+          <img
+            src="/images/treemlog.webp"
+            alt="3M logo"
+            className="w-6/12 max-w-[120.04px] object-contain"
+          />
         </div>
       </div>
 
-      <div className="w-8/12 lg:min-h-[620px] lg:mt-[-180px]">
+      <div className="w-full xl:w-8/12 lg:min-h-[620px] lg:mt-[-180px] order-1 xl:order-3">
         {/************* Seccion de Fotos Grandes *************/}
         <Swiper
           onSwiper={setMainSwiper}

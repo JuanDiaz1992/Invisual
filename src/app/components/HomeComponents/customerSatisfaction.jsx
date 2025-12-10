@@ -4,9 +4,9 @@ export default function CustomerSatisfaction() {
   return (
     <section
       id="satisfaction"
-      className="min-h-screen text-white satisfaction xl:mt-[-120px] pb-[157px] xl:pb-0 mt-[-264px] pt-[193px] pt:xl-0"
+      className="min-h-screen text-white satisfaction xl:mt-[-120px] xl:pb-0 pt-[150px] mt-[-224px] xl:pt-0"
     >
-      <div className="container mx-auto xl:max-w-[1200px] xl:pt-24 px-[24px] xl:px-0 mt-[40px] xl:mt-0">
+      <div className="container mx-auto xl:max-w-[1200px] px-[24px] xl:px-0 mt-[40px] xl:mt-0">
         <h2 className="text-[40px] leading-[40px] xl:text-[90px] font-black italic pb-8 xl:leading-[95px] ">
           CUSTOMER{" "}
           <span className="text-stroke block xl:text-[110px]">

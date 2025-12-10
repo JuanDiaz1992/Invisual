@@ -9,11 +9,11 @@ export default function BenefitsClient({ benefits, benefitsImages }) {
   const nextBenefitsRef = useRef(null);
 
   return (
-    <div className="flex">
-      <ul className="lg:w-[26%] lg:pt-8">
+    <div className="flex flex-col xl:flex-row">
+      <ul className="w-full lg:w-[26%] lg:pt-8">
         {benefits.map((option, index) => {
           return (
-            <li key={index} className="flex lg:pb-4">
+            <li key={index} className="flex pb-4">
               <div className="relative w-full lg:max-w-[19px] max-w-[24px] h-[24px] shrink-0">
                 <Image
                   src="/images/list-icon.svg"
@@ -26,7 +26,7 @@ export default function BenefitsClient({ benefits, benefitsImages }) {
             </li>
           );
         })}
-        <div className="flex gap-x-2 lg:pt-6">
+        <div className="flex gap-x-2 pt-[58px] xl:pt-6 pb-[45px] xl:pb-0">
           <ButtonLaid buttonText={"Learn More"} width={145} />
           <button
             ref={prevBenefitsRef}
@@ -107,6 +107,7 @@ export default function BenefitsClient({ benefits, benefitsImages }) {
           prevRef={prevBenefitsRef}
           nextRef={nextBenefitsRef}
           height="544px"
+          mobileHeight="200px"
         />
       </div>
     </div>

@@ -450,7 +450,15 @@ body {
   background-position: center top;
 }
 
-  
+#why.home{
+  background-image: url('/images/bg-Why-Choose-Us-movil.webp');
+}
+
+#benefits.home{
+  background-image: url('/images/beneficts-commercial-wraps-movil.webp');
+
+}
+
 }
 
 
