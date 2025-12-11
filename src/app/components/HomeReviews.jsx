@@ -129,7 +129,7 @@ const HomeReviews = () => {
 
   return (
     <>
-      <div className="hidden xl:flex gap-[21px]">
+      <div className="hidden lg:flex gap-[21px] ps-[24px] xl:ps-0">
         <div className="flex flex-col items-center justify-end mb-[56px] max-w-[342px] relative">
           <div className=" w-full">
             <p className="text-sm mt-2 pointer-events-none select-none hidden lg:block">
@@ -244,7 +244,7 @@ const HomeReviews = () => {
                 <p
                   className={`text-[20px] font-bold absolute z-90 lg:w-[10rem] transition-all duration-700 leading-[24px]  ${
                     activeIndex === index
-                      ? "text-[#1b1b1b] bottom-[180px] left-[30px]"
+                      ? "text-[#1b1b1b] bottom-[220px] xl:bottom-[180px] left-[30px]"
                       : isEnd
                       ? "right-0 bottom-[30px] text-center"
                       : "text-white bottom-[30px] left-[30px]"
@@ -297,7 +297,7 @@ const HomeReviews = () => {
         </Swiper>
       </div>
 
-      <div className="xl:hidden mb-[-92px]">
+      <div className="lg:hidden mb-[-92px]">
         <div className="relative">
           <Swiper
             modules={[Pagination]}

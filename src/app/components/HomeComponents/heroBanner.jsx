@@ -7,7 +7,6 @@ import ButtonLaid from "../button";
 export default function HeroBanner() {
   return (
     <section id="home-hero-banner" className="md:mb-16 relative mb-[-50px] lg:mb-0">
-      {/******* Red line top (Decorativo) */}
       <div className="hidden md:flex absolute max-h-[65px] h-[65px] rotate-[165deg] overflow-hidden translate-x-[-100px] translate-y-[70px] shadow-[5px_10px_10px_0px_rgba(0,0,0,1)] z-10">
         <div
           className={`lg:w-[1600px] w-full h-[100px] degradado float-up-down`}
@@ -24,7 +23,7 @@ export default function HeroBanner() {
       />
 
       {/******* Inner section */}
-      <div className="container lg:max-w-[1200px] mx-auto px-[24px] lg:px-0 pt-[45px] lg:pt-50 pb-8 relative">
+      <div className="lg:container lg:max-w-[1200px] mx-auto px-[24px] xl:px-0 pt-[45px] lg:pt-50 pb-8 relative">
         <h1 className="text-[22px] font-bold relative z-20 md:text-left text-center">
           Maryland, Virginia, & D.C
           <span className="italic font-black text-[30px] md:text-[38px] lg:text-[65px] block uppercase lg:leading-[70px] tofinowide relative">

@@ -67,8 +67,8 @@ export default function SliderHomeWhyChose() {
   }
 
   return (
-    <div className="w-full flex flex-col xl:flex-row">
-      <div className="w-full xl:w-4/12 h-[140px] xl:h-fit order-3 xl:order-1">
+    <div className="w-full flex flex-col lg:flex-row">
+      <div className="w-full lg:w-4/12 h-[140px] lg:h-fit order-3 lg:order-1">
         {/************* Seccion de Miniaturas con Swiper *************/}
         <div className="relative mx-auto mt-4">
           <div className="relative overflow-hidden w-full h-[137px] select-none">
@@ -127,7 +127,7 @@ export default function SliderHomeWhyChose() {
           </div>
         </div>
 
-        <div className="lg:pt-8 flex-wrap gap-x-[15px] hidden xl:flex">
+        <div className="lg:pt-8 flex-wrap gap-x-[15px] hidden lg:flex">
           <p className="lg:text-[25px] mb-[33px] ">
             <span className="font-black tofinowide">Woman-Owned</span> Business{" "}
             <span className="block font-bold">Certifications and Tools</span>
@@ -145,7 +145,7 @@ export default function SliderHomeWhyChose() {
         </div>
       </div>
 
-      <div className="w-full xl:w-8/12 lg:min-h-[620px] lg:mt-[-180px] order-1 xl:order-3">
+      <div className="w-full lg:w-8/12 lg:min-h-[620px] lg:mt-[-180px] order-1 lg:order-3">
         {/************* Seccion de Fotos Grandes *************/}
         <Swiper
           onSwiper={setMainSwiper}

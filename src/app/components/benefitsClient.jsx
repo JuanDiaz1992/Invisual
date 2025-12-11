@@ -4,9 +4,24 @@ import ButtonLaid from "./button";
 import React, { useRef } from "react";
 import Image from "next/image";
 
+const prepareImages = (images) => {
+
+  return images.map((image, index) => (
+    <div key={index} className="w-full h-full relative">
+      <Image
+        src={image.src}
+        alt={`Vehículo ${index + 1}`}
+        fill
+        className="object-contain"
+        priority={index === 0}
+      />
+    </div>
+  ));
+};
 export default function BenefitsClient({ benefits, benefitsImages }) {
   const prevBenefitsRef = useRef(null);
   const nextBenefitsRef = useRef(null);
+  const slides = prepareImages(benefitsImages);
 
   return (
     <div className="flex flex-col xl:flex-row">
@@ -64,10 +79,12 @@ export default function BenefitsClient({ benefits, benefitsImages }) {
               </defs>
             </svg>
           </button>
-          <button ref={nextBenefitsRef}
+          <button
+            ref={nextBenefitsRef}
             className="cursor-pointer hover:opacity-80 transition-opacity "
             type="button"
-            aria-label="Next slide">
+            aria-label="Next slide"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="41"
@@ -103,7 +120,7 @@ export default function BenefitsClient({ benefits, benefitsImages }) {
 
       <div className="lg:w-[80%] lg:mt-[-30px] lg:me-[-90px] benefit-slider-bg">
         <BasicSlider
-          info={benefitsImages}
+          info={slides}
           prevRef={prevBenefitsRef}
           nextRef={nextBenefitsRef}
           height="544px"

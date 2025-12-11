@@ -26,7 +26,7 @@ export default function Services() {
       <div className="absolute max-h-[600px] h-[400px] rotate-[-163.5deg] overflow-hidden translate-x-[-300px] translate-y-[-30px] shadow-[5px_10px_16px_0px_rgba(0,0,0,0.7)] z-[19] bg-[#1A1A1A]">
         <div className={`lg:w-[2500px] w-full h-[100px] bg-[#1A1A1A]`} />
       </div>
-      <div className="container mx-auto lg:max-w-[1200px] px-[24px] lg:px-0 relative z-20 mt-[-95px] lg:mt-0">
+      <div className="lg:container mx-auto lg:max-w-[1200px] px-[24px] xl:px-0 relative z-20 mt-[-95px] lg:mt-0">
         <h2 className="text-[40px] lg:text-[100px] leading-[45px] lg:leading-[105px] font-black italic pb-[30px] lg:pb-8 lg:ps-20">
           OUR <br className="lg:hidden"></br> <span className="text-stroke">SERVICES</span>
         </h2>

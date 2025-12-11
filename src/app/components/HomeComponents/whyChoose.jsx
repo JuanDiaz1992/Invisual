@@ -18,7 +18,7 @@ export default function WhyChose() {
   return (
     <section
       id="why"
-      className="min-h-screen text-white px-[24px] lg:px-20 home mt-[182px] lg:mt-[100px] pt-[145px] pb-[200px] lg:pb-0 lg:pt-0"
+      className="min-h-screen text-white px-[24px] lg:px-20 home mt-[182px] lg:mt-[-100] pt-[145px] pb-[200px] lg:pb-0 lg:pt-0"
     >
       <div className="container lg:max-w-[1200px] mx-auto">
         <h2 className="text-[50px] lg:text-[100px] font-black italic lg:pb-20 lg:pt-8 leading-[50px] lg:leading-[110px] text-center">
