@@ -459,6 +459,10 @@ body {
 
 }
 
+#graphic.home{
+  background-image: url('/images/graphic-design-bg-movil.webp');
+}  
+
 }
 
 

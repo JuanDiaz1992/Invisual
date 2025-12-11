@@ -19,11 +19,11 @@ export default function AditionalServices() {
     })),
   };
   return (
-    <section className="mt-[170px] relative pb-[160px]" id="additional">
+    <section className="lg:mt-[170px] relative pb-[160px]" id="additional">
       <div className="w-full z-2">
-        <h2 className="lg:text-[110px] font-black italic lg:pt-8 leading-[110px] text-center lg:pb-12">
-          <span className="text-stroke me-[350px]">ADDITIONAL</span> <br />
-          <span className="ms-[350px]">SERVICES</span>
+        <h2 className="text-[40px] leading-[45px] lg:text-[110px] font-black italic pt-8 lg:leading-[110px] text-center pb-[42px] lg:pb-12">
+          <span className="text-stroke lg:me-[350px]">ADDITIONAL</span> <br />
+          <span className="lg:ms-[350px]">SERVICES</span>
         </h2>
       </div>
       <AdditionalServicesHome slides={AdditionalServicesData} />

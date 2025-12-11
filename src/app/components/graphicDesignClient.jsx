@@ -46,7 +46,7 @@ const CompareComponent = ({ data }) => {
   };
   return (
     <div className="flex w-full flex-col-reverse md:flex-row items-center md:items-start">
-      <div className="lg:w-3/12 w-full max-w-[332px] flex items-start pt-[110px] text-center md:text-left">
+      <div className="lg:w-3/12 w-full max-w-[332px] flex items-start pt-[25px] md:pt-[110px] text-center md:text-left">
         <p>{data.desc}</p>
       </div>
       <div className="lg:w-9/12 w-full pt-12 lg:pt-0 mb-5 md:mb-0">

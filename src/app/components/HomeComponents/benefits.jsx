@@ -25,7 +25,7 @@ export default function Benefits() {
 
   return (
     <section id="benefits" className="min-h-screen text-white home lg:mt-[-120px] pb-[148px] lg:pb-0">
-      <div className="container mx-auto lg:max-w-[1200px] px-[24px] lg:px-0 lg:pb-64">
+      <div className="container mx-auto lg:max-w-[1200px] px-[24px] xl:px-0 lg:pb-64">
         <h2 className="text-[38px] leading-[45px] lg:text-[100px] font-black italic lg:pb-20 lg:pt-8 lg:leading-[110px] lg:max-w-[60rem] mb-[36px] lg:mb-0">
           <span className="text-stroke block">BENEFITS OF</span> COMMERCIAL
           VEHICLE WRAPS <span className="text-stroke block text-[40px] lg:text-[100px]">SERVICES</span>

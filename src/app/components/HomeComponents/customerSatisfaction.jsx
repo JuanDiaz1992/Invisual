@@ -4,7 +4,7 @@ export default function CustomerSatisfaction() {
   return (
     <section
       id="satisfaction"
-      className="min-h-screen text-white satisfaction lg:mt-[-120px] lg:pb-[200px] pt-[150px] mt-[-224px] lg:pt-0"
+      className="min-h-screen text-white satisfaction lg:mt-[-120px] xl:pb-[200px] pt-[150px] mt-[-224px] lg:pt-0"
     >
       <div className="lg:container mx-auto lg:max-w-[1200px] px-[24px] xl:px-0 mt-[40px] lg:mt-0">
         <h2 className="text-[40px] leading-[40px] lg:text-[90px] font-black italic pb-8 lg:leading-[95px] ">
