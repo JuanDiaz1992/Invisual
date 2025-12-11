@@ -191,9 +191,10 @@ body {
 }
 
 .satisfaction {
-  background-image: url('/images/customers-satisfaction-bg.webp');
-  background-position: top right;
-  background-size:cover;
+    background-image: url(/images/customers-satisfaction-bg.webp);
+    background-position: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .bg-image {
@@ -442,6 +443,7 @@ body {
 .satisfaction {
   background-image: url('/images/customers-satisfaction-bg-movil.webp');
   background-position: bottom;
+  background-size: cover;
   
 }
 
