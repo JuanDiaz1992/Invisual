@@ -4,25 +4,19 @@ import ButtonLaid from "./button";
 import React, { useRef } from "react";
 import Image from "next/image";
 
-const prepareImages = (images) => {
-
-  return images.map((image, index) => (
-    <div key={index} className="w-full h-full relative">
+const prepareImages = ({data}) => {
+  return (
       <Image
-        src={image.src}
-        alt={`Vehículo ${index + 1}`}
+        src={data.src}
+        alt={data.alt}
         fill
         className="object-contain"
-        priority={index === 0}
       />
-    </div>
-  ));
+  );
 };
 export default function BenefitsClient({ benefits, benefitsImages }) {
   const prevBenefitsRef = useRef(null);
   const nextBenefitsRef = useRef(null);
-  const slides = prepareImages(benefitsImages);
-
   return (
     <div className="flex flex-col xl:flex-row">
       <ul className="w-full lg:w-[26%] lg:pt-8">
@@ -120,7 +114,8 @@ export default function BenefitsClient({ benefits, benefitsImages }) {
 
       <div className="lg:w-[80%] lg:mt-[-30px] lg:me-[-90px] benefit-slider-bg">
         <BasicSlider
-          info={slides}
+          SlideComponent={prepareImages}
+          info={benefitsImages}
           prevRef={prevBenefitsRef}
           nextRef={nextBenefitsRef}
           height="544px"

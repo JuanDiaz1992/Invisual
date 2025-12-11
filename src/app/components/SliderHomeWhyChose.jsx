@@ -67,8 +67,8 @@ export default function SliderHomeWhyChose() {
   }
 
   return (
-    <div className="w-full flex flex-col lg:flex-row">
-      <div className="w-full lg:w-4/12 h-[140px] lg:h-fit order-3 lg:order-1">
+    <div className="w-full flex flex-col md:flex-row">
+      <div className="w-full md:w-4/12 h-[140px] md:h-fit order-3 md:order-1">
         {/************* Seccion de Miniaturas con Swiper *************/}
         <div className="relative mx-auto mt-4">
           <div className="relative overflow-hidden w-full h-[137px] select-none">
@@ -127,25 +127,27 @@ export default function SliderHomeWhyChose() {
           </div>
         </div>
 
-        <div className="lg:pt-8 flex-wrap gap-x-[15px] hidden lg:flex">
-          <p className="lg:text-[25px] mb-[33px] ">
+        <div className="md:pt-8 flex-wrap hidden md:flex">
+          <p className="md:text-[25px] mb-[33px] ">
             <span className="font-black tofinowide">Woman-Owned</span> Business{" "}
             <span className="block font-bold">Certifications and Tools</span>
           </p>
-          <img
-            src="/images/avery-dennison-logo.webp"
-            alt="Avery dennison logo"
-            className="w-6/12 max-w-[165.8px] object-contain"
-          />
-          <img
-            src="/images/treemlog.webp"
-            alt="3M logo"
-            className="w-6/12 max-w-[120.04px] object-contain"
-          />
+          <div className="flex  gap-x-[15px]">
+            <img
+              src="/images/avery-dennison-logo.webp"
+              alt="Avery dennison logo"
+              className="w-6/12 max-w-[165.8px] object-contain"
+            />
+            <img
+              src="/images/treemlog.webp"
+              alt="3M logo"
+              className="w-6/12 max-w-[120.04px] object-contain"
+            />
+          </div>
         </div>
       </div>
 
-      <div className="w-full lg:w-8/12 lg:min-h-[620px] lg:mt-[-180px] order-1 lg:order-3">
+      <div className="w-full md:w-8/12 md:min-h-[620px] md:mt-[-180px] order-1 :order-3">
         {/************* Seccion de Fotos Grandes *************/}
         <Swiper
           onSwiper={setMainSwiper}

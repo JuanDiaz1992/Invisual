@@ -1,4 +1,3 @@
-// src/components/GraphicDesignClient.jsx
 "use client";
 
 import React, { useRef } from "react";
@@ -42,9 +41,12 @@ const CustomHandle = () => (
 );
 
 const CompareComponent = ({ data }) => {
+  const imageContainStyle = {
+    objectFit: 'contain',
+  };
   return (
-    <div className="flex w-full">
-      <div className="lg:w-3/12 w-full flex items-start pt-[104px]">
+    <div className="flex w-full flex-col-reverse md:flex-row">
+      <div className="lg:w-3/12 w-full flex items-start lg:pt-[104px]">
         <p>{data.desc}</p>
       </div>
       <div className="lg:w-9/12 w-full py-12 lg:py-0">
@@ -53,6 +55,8 @@ const CompareComponent = ({ data }) => {
           rightImage={data.afterSrc}
           sliderLineWidth="1"
           handle={<CustomHandle />}
+          leftImageCss={imageContainStyle}
+          rightImageCss={imageContainStyle}
         />
       </div>
     </div>
@@ -70,7 +74,7 @@ export default function GraphicDesignClient({ GraphicDesignExamplesComplete }) {
         info={GraphicDesignExamplesComplete}
         prevRef={prevBARef}
         nextRef={nextBARef}
-        height="466px"
+        height="500px"
         allowSwipe={false}
         autoplayEnabled={false}
       />
