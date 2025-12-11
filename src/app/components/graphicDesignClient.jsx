@@ -45,11 +45,11 @@ const CompareComponent = ({ data }) => {
     objectFit: 'contain',
   };
   return (
-    <div className="flex w-full flex-col-reverse md:flex-row">
-      <div className="lg:w-3/12 w-full flex items-start lg:pt-[104px]">
+    <div className="flex w-full flex-col-reverse md:flex-row items-center md:items-start">
+      <div className="lg:w-3/12 w-full max-w-[332px] flex items-start pt-[110px] text-center md:text-left">
         <p>{data.desc}</p>
       </div>
-      <div className="lg:w-9/12 w-full py-12 lg:py-0">
+      <div className="lg:w-9/12 w-full pt-12 lg:pt-0 mb-5 md:mb-0">
         <ReactCompareImage
           leftImage={data.beforeSrc}
           rightImage={data.afterSrc}
@@ -78,8 +78,8 @@ export default function GraphicDesignClient({ GraphicDesignExamplesComplete }) {
         allowSwipe={false}
         autoplayEnabled={false}
       />
-      <div className="lg:w-3/12 w-full relative z-4">
-        <div className="flex gap-x-6 lg:pt-6 absolute bottom-[160px]">
+      <div className="lg:w-3/12 w-full flex justify-center md:justify-start relative z-4 mt-[45px] md:mt-0">
+        <div className="flex gap-x-6 lg:pt-6 absolute bottom-0 md:bottom-[160px]">
           <button
             ref={prevBARef}
             type="button"

@@ -184,33 +184,27 @@ export const GraphicDesignExamplesComplete = [
   {
     id: 2,
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit, etiam curae quam interdum quisque id, magnis accumsan placerat integer natoque ligula (Explicación breve del caso)",
-    beforeSrc: "/images/white.webp",
-    afterSrc: "/images/colored.webp",
-  },
-  {
-    id: 3,
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit, etiam curae quam interdum quisque id, magnis accumsan placerat integer natoque ligula (Explicación breve del caso)",
     beforeSrc: "/images/design-build-white.webp",
     afterSrc: "/images/design-build-colored.webp",
   },
   {
-    id: 4,
+    id: 3,
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit, etiam curae quam interdum quisque id, magnis accumsan placerat integer natoque ligula (Explicación breve del caso)",
     beforeSrc: "/images/jw-amazing-white.webp",
     afterSrc: "/images/jw-amazing-colored.webp",
   },
   {
-    id: 5,
+    id: 4,
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit, etiam curae quam interdum quisque id, magnis accumsan placerat integer natoque ligula (Explicación breve del caso)",
     beforeSrc: "/images/wecarte-white.webp",
     afterSrc: "/images/wecarte-colored.webp",
   },
-  // {
-  //   id: 6,
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit, etiam curae quam interdum quisque id, magnis accumsan placerat integer natoque ligula (Explicación breve del caso)",
-  //   beforeSrc: "/images/mtma-white.webp",
-  //   afterSrc: "/images/mtma-colored.webp",
-  // },
+  {
+    id: 5,
+    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit, etiam curae quam interdum quisque id, magnis accumsan placerat integer natoque ligula (Explicación breve del caso)",
+    beforeSrc: "/images/mtma-white.webp",
+    afterSrc: "/images/mtma-colored.webp",
+  },
 ];
 
 export const TypesOfWrapsComplete = [
