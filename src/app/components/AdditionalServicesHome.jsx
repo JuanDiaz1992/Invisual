@@ -49,8 +49,8 @@ const AdditionalServicesHome = ({ slides }) => {
             setActiveIndex(swiper.activeIndex % totalTitulos);
           }}
           breakpoints={{
-            0: { slidesPerView: 1.1, spaceBetween: 16 },
-            640: { slidesPerView: 2, spaceBetween: 24 },
+            0: { slidesPerView: 1.3, spaceBetween: 16 },
+            640: { slidesPerView: 3, spaceBetween: 12 },
             1024: { slidesPerView: 5, spaceBetween: 30 },
           }}
           watchOverflow={true}
@@ -82,7 +82,7 @@ const AdditionalServicesHome = ({ slides }) => {
                   <div
                     aria-hidden={!isActive}
                     className={`
-                    flex flex-col items-center justify-end text-center text-white relative z-20 transition-all duration-300 pb-[104px]
+                    w-full flex flex-col items-center justify-end text-center text-white relative z-20 transition-all duration-300 pb-[104px]
                     ${
                       isActive
                         ? "opacity-100 translate-y-0"
@@ -90,7 +90,7 @@ const AdditionalServicesHome = ({ slides }) => {
                     }
                   `}
                   >
-                    <p className="text-[14px]">{item.desc}</p>
+                    <p className="text-[14px] max-w-[232px] mb-[24px]">{item.desc}</p>
 
                     {isActive && (
                       <div className="flex flex-col gap-[10px]">
@@ -126,7 +126,7 @@ const AdditionalServicesHome = ({ slides }) => {
       </section>
 
       <div className="w-full inline-flex relative justify-center items-center z-2">
-        <div className="w-[40px] content-end lg:pt-24">
+        <div className="w-[40px] content-end lg:pt-24 hidden lg:block">
           <button
             type="button"
             onClick={handlePrev}
@@ -160,7 +160,7 @@ const AdditionalServicesHome = ({ slides }) => {
           <RuedaDeTitulos activeIndex={activeIndex} />
         </div>
 
-        <div className="w-[40px] content-end lg:pt-24">
+        <div className="w-[40px] content-end lg:pt-24 hidden lg:block">
           <button
             type="button"
             onClick={handleNext}

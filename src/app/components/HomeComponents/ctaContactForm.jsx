@@ -3,11 +3,14 @@ import ContactForm from "../ContactForm";
 export default function CtaContactForm() {
   return (
     <section id="cta" className="mt-[70px]  home">
-      <div className="container mx-auto lg:max-w-[1200px] flex flex-wrap items-start">
-        <div className="lg:w-8/12 lg:pt-48">
-          <h2 className="lg:text-[110px] font-black italic lg:pt-8 leading-[110px] lg:pb-12">
-            <span className="text-stroke">READY TO</span>{" "}
+      <div className="xl:container mx-auto lg:max-w-[1200px] px-[24px] xl:px-0 flex flex-wrap items-start">
+        <div className="lg:w-8/12 lg:pt-48 relative">
+          <h2 className="text-[40px] lg:text-[110px] font-black italic lg:pt-8 leading-[45px] lg:leading-[110px] lg:pb-12 ps-[28px] lg:ps-0 pt-[2px] ">
+            <span className="text-stroke">
+              READY TO <br className="block lg:hidden"></br>
+            </span>{" "}
             <span className="lg:ps-6">STAND OUT?</span>
+            <div className="block lg:hidden absolute top-0 left-0 w-full h-[200px] border-l-1 border-l-white border-t-1 border-t-white transform rotate-[-10.894deg]"></div>
           </h2>
         </div>
         <div className="lg:w-5/12 flex flex-wrap lg:ms-[-120px] justify-center">
