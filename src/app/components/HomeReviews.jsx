@@ -14,7 +14,6 @@ const HomeReviews = () => {
   const [isEnd, setIsEnd] = useState(false);
   const [showText, setShowText] = useState(false);
 
-  // Nuevo estado para el audio
   const [isMuted, setIsMuted] = useState(true);
 
   const intervalRef = useRef(null);
