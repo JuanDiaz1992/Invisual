@@ -9,19 +9,27 @@ const TypeOfWrapComponent = ({ data }) => {
     <article className="flex flex-col justify-center items-center h-full">
       {" "}
       <div className="relative w-full h-[365px] mb-4">
-        <Image
-          src={data.src}
-          alt={data.alt || `Example of ${data.title}`}
-          fill
-          className="object-contain"
-          sizes="(max-width: 768px) 100vw, 500px"
-        />
+        <div>
+          <Image
+            src={data.src}
+            alt={data.alt || `Example of ${data.title}`}
+            fill
+            className="object-contain relative z-10 max-w-[400px] ms-[30px] md:ms-0 md:max-w-full"
+            sizes="(max-width: 768px) 100vw, 500px"
+          />
+          <Image
+            src="/images/types-of-vehicle-wrap-decoration-movil.webp"
+            fill
+            className="object-contain block md:hidden absolute bottom-[25px] right-0 z-1 w-full"
+            sizes="(max-width: 768px) 100vw, 500px"
+          />
+        </div>
       </div>
-      <div>
+      <div className="px-[24px] xl:px-0">
         <h3 className="text-[25px] font-bold text-center lg:pb-10">
           {data.title}
         </h3>
-        <p className="text-[14px] text-center leading-[20px] lg:px-6">
+        <p className="text-[14px] text-center leading-[20px] lg:px-6 max-w-[312px] md:max-w-fit">
           {data.desc}
         </p>
       </div>
@@ -35,7 +43,7 @@ export default function TypesOfVehicleWrapCarouseHome({ data }) {
 
   return (
     <>
-      <div className="w-[40px] content-end lg:pb-12">
+      <div className="absolute md:relative left-0 bottom-[55px] w-[50%] md:w-[40px] content-end pe-[12px] md:pe-0 flex justify-end items-start lg:pb-12">
         <button
           ref={prevTVRef}
           type="button"
@@ -74,7 +82,7 @@ export default function TypesOfVehicleWrapCarouseHome({ data }) {
         </button>
       </div>
 
-      <div className="w-full max-w-[550px]">
+      <div className="w-full md:max-w-[550px] pb-[65px] md:pb-0">
         <BasicSlider
           SlideComponent={TypeOfWrapComponent}
           info={data}
@@ -84,7 +92,7 @@ export default function TypesOfVehicleWrapCarouseHome({ data }) {
         />
       </div>
 
-      <div className="w-[40px] content-end lg:pb-12">
+      <div className="absolute md:relative right-0 bottom-[55px] w-[50%] md:w-[40px] ps-[12px] md:ps-0 content-end lg:pb-12 flex justify-start">
         <button
           ref={nextTVRef}
           type="button"

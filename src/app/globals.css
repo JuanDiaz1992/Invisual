@@ -435,35 +435,40 @@ body {
 }
 
 @media (max-width:767px) {
-.about-banner {
-  background-image: url('/images/banner-bg-about-resp.webp');
-  background-position: bottom center;
-}
+  .about-banner {
+    background-image: url('/images/banner-bg-about-resp.webp');
+    background-position: bottom center;
+  }
 
-.satisfaction {
-  background-image: url('/images/customers-satisfaction-bg-movil.webp');
-  background-position: bottom;
-  background-size: cover;
-  
-}
+  .satisfaction {
+    background-image: url('/images/customers-satisfaction-bg-movil.webp');
+    background-position: bottom;
+    background-size: cover;
+    
+  }
 
-.our-mission {
-  background-image: url('/images/mission-bg-resp.webp');
-  background-position: center top;
-}
+  .our-mission {
+    background-image: url('/images/mission-bg-resp.webp');
+    background-position: center top;
+  }
 
-#why.home{
-  background-image: url('/images/bg-Why-Choose-Us-movil.webp');
-}
+  #why.home{
+    background-image: url('/images/bg-Why-Choose-Us-movil.webp');
+  }
 
-#benefits.home{
-  background-image: url('/images/beneficts-commercial-wraps-movil.webp');
+  #benefits.home{
+    background-image: url('/images/beneficts-commercial-wraps-movil.webp');
 
-}
+  }
 
-#graphic.home{
-  background-image: url('/images/graphic-design-bg-movil.webp');
-}  
+  #graphic.home{
+    background-image: url('/images/graphic-design-bg-movil.webp');
+  }  
+
+  #types.home {
+    background-image: none;
+
+  }
 
 }
 

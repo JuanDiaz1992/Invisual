@@ -233,201 +233,57 @@ export const TypeImagesLast = [
     title: "CARS",
     src: "cars-central-image.webp",
     alt: "We can wrap cars",
-    className: "lg:max-w-[432px] lg:mt-[-150px]",
-    bgData: [
-      {
-        src: "cars-bg-1.webp",
-        alt: "We can wrap cars left",
-        className: "lg:max-w-[182px] lg:max-h-[388px]",
-      },
-      {
-        src: "cars-bg-2.webp",
-        alt: "We can wrap cars center",
-        className:
-          "lg:max-w-[277px] lg:ms-[-27px] lg:me-[-40px] lg:max-h-[422px]",
-      },
-      {
-        src: "cars-bg-3.webp",
-        alt: "We can wrap cars right",
-        className: "lg:max-w-[209px] lg:ms-[-70px] lg:max-h-[486px]",
-      },
-    ],
+    type: 4,
+    bgImages: ["cars-bg-1.webp", "cars-bg-2.webp", "cars-bg-3.webp"],
   },
   {
     title: "TRUCKS",
     src: "trucks-central-example.webp",
     alt: "We can wrap trucks",
-    className: "lg:max-w-[590px] lg:mt-[-110px]",
-    bgData: [
-      {
-        src: "trucks-bg-1.webp",
-        alt: "We can wrap trucks left",
-        className: "lg:max-w-[190px] lg:max-h-[439px] lg:me-[-60px]",
-      },
-      {
-        src: "trucks-bg-2.webp",
-        alt: "We can wrap trucks center",
-        className:
-          "lg:max-w-[277px] lg:ms-[-30px] lg:me-[-40px] lg:max-h-[439px]",
-      },
-      {
-        src: "trucks-bg-3.webp",
-        alt: "We can wrap trucks right",
-        className: "lg:max-w-[209px] lg:ms-[-60px] lg:max-h-[439px]",
-      },
-    ],
+    type: 1,
+    bgImages: ["trucks-bg-1.webp", "trucks-bg-2.webp", "trucks-bg-3.webp"],
   },
   {
     title: "VANS",
     src: "vans-central-example.webp",
     alt: "We can wrap vans",
-    className: "lg:max-w-[493px] lg:mt-[-120px] lg:max-h-[249px]",
-    bgData: [
-      {
-        src: "vans-bg-1.webp",
-        alt: "We can wrap vans left",
-        className:
-          "lg:max-w-[215px] lg:max-h-[393px] lg:me-[-10px] lg:mt-[60px]",
-      },
-      {
-        src: "vans-bg-2.webp",
-        alt: "We can wrap vans center",
-        className:
-          "lg:max-w-[190px] lg:ms-[-20px] lg:me-[-10px] lg:max-h-[436px]",
-      },
-      {
-        src: "vans-bg-3.webp",
-        alt: "We can wrap vans right",
-        className:
-          "lg:max-w-[200px] lg:ms-[-20px] lg:max-h-[439px] lg:mt-[60px]",
-      },
-    ],
+    type: 3,
+    bgImages: ["vans-bg-1.webp", "vans-bg-2.webp", "vans-bg-3.webp"],
   },
   {
     title: "FOOD TRUCKS",
     src: "food-truck-central-example.webp",
     alt: "We can wrap food trucks",
-    className: "lg:max-w-[523px] lg:mt-[-140px]",
-    bgData: [
-      {
-        src: "food-truck-bg-1.webp",
-        alt: "We can wrap food trucks left",
-        className:
-          "lg:max-w-[215px] lg:max-h-[393px] lg:me-[-10px] lg:mt-[40px]",
-      },
-      {
-        src: "food-truck-bg-2.webp",
-        alt: "We can wrap food trucks center",
-        className:
-          "lg:max-w-[190px] lg:ms-[-20px] lg:me-[-10px] lg:max-h-[436px]",
-      },
-      {
-        src: "food-truck-bg-3.webp",
-        alt: "We can wrap food trucks right",
-        className:
-          "lg:max-w-[200px] lg:ms-[-20px] lg:max-h-[439px] lg:mt-[60px]",
-      },
-    ],
+    type: 3,
+    bgImages: ["food-truck-bg-1.webp", "food-truck-bg-2.webp", "food-truck-bg-3.webp"],
   },
   {
     title: "TRAILERS",
     src: "trailers-central-example.webp",
     alt: "We can wrap trailers",
-    className: "lg:max-w-[460px] lg:mt-[-250px]",
-    bgData: [
-      {
-        src: "trailers-bg-1.webp",
-        alt: "We can wrap trailers left",
-        className: "lg:max-w-[190px] lg:max-h-[439px] lg:me-[-60px]",
-      },
-      {
-        src: "trailers-bg-2.webp",
-        alt: "We can wrap trailers center",
-        className:
-          "lg:max-w-[277px] lg:ms-[-30px] lg:me-[-40px] lg:max-h-[439px]",
-      },
-      {
-        src: "trailers-bg-3.webp",
-        alt: "We can wrap trailers right",
-        className: "lg:max-w-[209px] lg:ms-[-60px] lg:max-h-[439px]",
-      },
-    ],
+    type: 1,
+    bgImages: ["trailers-bg-1.webp", "trailers-bg-2.webp", "trailers-bg-3.webp"],
   },
   {
     title: "SUV",
     src: "suv-central-example.webp",
     alt: "We can wrap suvs",
-    className: "lg:max-w-[523px] lg:mt-[-100px]",
-    bgData: [
-      {
-        src: "suv-bg-1.webp",
-        alt: "We can wrap suvs left",
-        className:
-          "lg:max-w-[215px] lg:max-h-[393px] lg:me-[-10px] lg:mt-[40px]",
-      },
-      {
-        src: "suv-bg-2.webp",
-        alt: "We can wrap suvs center",
-        className:
-          "lg:max-w-[290px] lg:ms-[-20px] lg:me-[-105px] lg:max-h-[436px]",
-      },
-      {
-        src: "suv-bg-3.webp",
-        alt: "We can wrap suvs right",
-        className:
-          "lg:max-w-[220px] lg:ms-[-20px] lg:max-h-[389px] lg:mt-[60px]",
-      },
-    ],
+    type: 2,
+    bgImages: ["suv-bg-1.webp", "suv-bg-2.webp", "suv-bg-3.webp"],
   },
   {
     title: "MOTORCYCLE",
     src: "motorcycle-central-example.webp",
     alt: "We can wrap motorcycles",
-    className: "lg:max-w-[460px] lg:mt-[-150px]",
-    bgData: [
-      {
-        src: "motorcycle-bg-1.webp",
-        alt: "We can wrap motorcycles left",
-        className: "lg:max-w-[190px] lg:max-h-[439px] lg:me-[-60px]",
-      },
-      {
-        src: "motorcycle-bg-2.webp",
-        alt: "We can wrap motorcycles center",
-        className:
-          "lg:max-w-[277px] lg:ms-[-30px] lg:me-[-40px] lg:max-h-[439px]",
-      },
-      {
-        src: "motorcycle-bg-3.webp",
-        alt: "We can wrap motorcycles right",
-        className: "lg:max-w-[209px] lg:ms-[-60px] lg:max-h-[439px]",
-      },
-    ],
+    type: 1,
+    bgImages: ["motorcycle-bg-1.webp", "motorcycle-bg-2.webp", "motorcycle-bg-3.webp"],
   },
   {
     title: "BOAT",
     src: "boat-central-example.webp",
-    alt: "We can wrap boats", // Corregido: antes decía "suv"
-    className: "lg:max-w-[523px] lg:mt-[-350px]",
-    bgData: [
-      {
-        src: "boat-bg-1.webp",
-        alt: "We can wrap boats left",
-        className:
-          "lg:max-w-[215px] lg:max-h-[393px] lg:me-[-10px] lg:mt-[40px]",
-      },
-      {
-        src: "boat-bg-2.webp",
-        alt: "We can wrap boats center",
-        className:
-          "lg:max-w-[290px] lg:ms-[-20px] lg:me-[-105px] lg:max-h-[436px]",
-      },
-      {
-        src: "boat-bg-3.webp",
-        alt: "We can wrap boats right",
-        className:
-          "lg:max-w-[220px] lg:ms-[-20px] lg:max-h-[389px] lg:mt-[60px]",
-      },
-    ],
+    alt: "We can wrap boats",
+    type: 2,
+    bgImages: ["boat-bg-1.webp", "boat-bg-2.webp", "boat-bg-3.webp"],
   },
 ];
 

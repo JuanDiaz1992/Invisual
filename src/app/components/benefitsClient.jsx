@@ -10,7 +10,7 @@ const prepareImages = ({data}) => {
         src={data.src}
         alt={data.alt}
         fill
-        className="object-contain"
+        className="object-contain w-full h-full"
       />
   );
 };
@@ -18,7 +18,7 @@ export default function BenefitsClient({ benefits, benefitsImages }) {
   const prevBenefitsRef = useRef(null);
   const nextBenefitsRef = useRef(null);
   return (
-    <div className="flex flex-col xl:flex-row">
+    <div className="flex flex-col lg:flex-row">
       <ul className="w-full lg:w-[26%] lg:pt-8">
         {benefits.map((option, index) => {
           return (
@@ -119,7 +119,7 @@ export default function BenefitsClient({ benefits, benefitsImages }) {
           prevRef={prevBenefitsRef}
           nextRef={nextBenefitsRef}
           height="544px"
-          mobileHeight="200px"
+          mobileHeight="400px"
         />
       </div>
     </div>
