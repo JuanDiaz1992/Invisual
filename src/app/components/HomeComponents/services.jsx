@@ -27,7 +27,7 @@ export default function Services() {
         <div className={`lg:w-[2500px] w-full h-[100px] bg-[#1A1A1A]`} />
       </div>
       <div className="lg:container mx-auto lg:max-w-[1200px] px-[24px] xl:px-0 relative z-20 mt-[-95px] lg:mt-0">
-        <h2 className="text-[40px] lg:text-[100px] leading-[45px] lg:leading-[105px] font-black italic pb-[30px] lg:pb-8 lg:ps-20">
+        <h2 className="text-[40px] md:text-[80px] md:leading-[85px] lg:text-[100px] leading-[45px] lg:leading-[105px] font-black italic pb-[30px] lg:pb-8 lg:ps-20">
           OUR <br className="lg:hidden"></br> <span className="text-stroke">SERVICES</span>
         </h2>
         <Carousel3Dv2 slides={ServiceSlidesHome} />

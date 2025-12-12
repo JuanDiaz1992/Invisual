@@ -76,7 +76,7 @@ const ContactForm = ({ align = "H" }) => {
         >
           <div
             className={`grid ${
-              align === "V" ? "lg:grid-cols-6 gap-4" : "lg:grid-cols-2 gap-8"
+              align === "V" ? "lg:grid-cols-6 gap-4" : "lg:grid-cols-2 gap-x-[13px] gap-y-[15px]"
             }`}
           >
             <div className="col-span-2 lg:col-span-1">

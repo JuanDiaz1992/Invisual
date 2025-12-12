@@ -29,7 +29,7 @@ export default function GraphicDesignServer() {
     <section id="graphic" className="h-fit text-white home lg:mt-[-100px]">
       <div className="lg:container mx-auto lg:max-w-[1200px] flex flex-wrap px-[24px] lg-0 pb-[50px]">
         <div className="w-full">
-          <h2 className="text-[40px] lg:text-[110px] font-black italic lg:pt-8 leading-[45px] lg:leading-[110px] text-center lg:pb-12">
+          <h2 className="text-[40px] lg:text-[110px] md:text-[80px] md:leading-[85px]  font-black italic lg:pt-8 leading-[45px] lg:leading-[110px] text-center lg:pb-12">
             <span className="text-stroke">GRAPHIC</span><br className="block lg:hidden"></br> DESIGN
           </h2>
           <p className="text-[25px] lg:text-[45px] text-center font-bold mt-[27px] lg:mt-0">

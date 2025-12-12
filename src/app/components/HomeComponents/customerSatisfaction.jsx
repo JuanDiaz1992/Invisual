@@ -7,7 +7,7 @@ export default function CustomerSatisfaction() {
       className="min-h-fit text-white satisfaction lg:mt-[-120px] pb-0 md:pb-[100px] pt-[150px] mt-[-224px] lg:pt-0"
     >
       <div className="lg:container mx-auto lg:max-w-[1200px] px-[24px] xl:px-0 mt-[40px] lg:mt-0">
-        <h2 className="text-[40px] leading-[40px] lg:text-[90px] font-black italic pb-8 lg:leading-[95px] ">
+        <h2 className="text-[40px] leading-[40px] md:text-[80px] md:leading-[85px]   lg:text-[90px] font-black italic pb-8 lg:leading-[95px] ">
           CUSTOMER{" "}
           <span className="text-stroke block lg:text-[110px]">
             SATISFACTION

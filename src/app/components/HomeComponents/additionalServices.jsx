@@ -21,7 +21,7 @@ export default function AditionalServices() {
   return (
     <section className="lg:mt-[170px] relative pb-[160px]" id="additional">
       <div className="w-full z-2">
-        <h2 className="text-[40px] leading-[45px] lg:text-[110px] font-black italic pt-8 lg:leading-[110px] text-center pb-[42px] lg:pb-12">
+        <h2 className="text-[40px] leading-[45px] md:text-[80px] md:leading-[85px] lg:text-[110px] font-black italic pt-8 lg:leading-[110px] text-center pb-[42px] lg:pb-12">
           <span className="text-stroke lg:me-[350px]">ADDITIONAL</span> <br />
           <span className="lg:ms-[350px]">SERVICES</span>
         </h2>

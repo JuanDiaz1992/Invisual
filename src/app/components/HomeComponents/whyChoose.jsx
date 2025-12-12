@@ -21,7 +21,7 @@ export default function WhyChose() {
       className="min-h-screen text-white px-[24px] xl:px-20 home pt-[145px] md:pt-0 mt-[145px] xl:mt-0 pb-[200px] lg:pb-0 "
     >
       <div className="lg:container lg:max-w-[1200px] mx-auto">
-        <h2 className="text-[50px] lg:text-[100px] font-black italic lg:pb-20 lg:pt-8 leading-[50px] lg:leading-[110px] text-center">
+        <h2 className="text-[50px] lg:text-[100px] md:text-[80px] md:leading-[85px]  font-black italic lg:pb-20 lg:pt-8 leading-[50px] lg:leading-[110px] text-center">
           <span className="text-stroke block text-[40px] lg:text-[100px] leading-[45px] lg:leading-[110px]">
             WHY CHOOSE
           </span>{" "}
