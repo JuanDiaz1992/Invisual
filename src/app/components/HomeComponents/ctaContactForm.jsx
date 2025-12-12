@@ -1,8 +1,18 @@
 import GrowNumber from "../GrowNumber";
 import ContactForm from "../ContactForm";
+import Image from "next/image";
 export default function CtaContactForm() {
   return (
-    <section id="cta" className="mt-[70px]  home">
+    <section id="cta" className="mt-[170px]  home relative">
+      <Image
+        src="/images/graphic-design-bars.webp"
+        alt="bars"
+        sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
+        srcSet="/images/graphic-design-bars.webp 768w, /images/graphic-design-bars.webp 1024w"
+        width={959}
+        height={550}
+        className="absolute top-[-80px]"
+      />
       <div className="lg:container mx-auto lg:max-w-[1200px] px-[24px] xl:px-0 flex flex-wrap items-start">
         <div className="lg:w-8/12 lg:pt-[38px] relative lg:pb-[58px]">
           <h2 className="text-[40px] lg:text-[100px] font-black italic leading-[45px] lg:leading-[110px] lg:pb-12 ps-[28px] lg:ps-0 pt-[2px] ">
@@ -15,10 +25,7 @@ export default function CtaContactForm() {
         </div>
 
 
-        <div className="lg:w-6/12 lg:mt-[-50px] lg:px-16 lg:pb-24">
-          <ContactForm />
-        </div>
-                <div className="lg:w-5/12 flex flex-wrap lg:ms-[-120px] justify-center">
+        <div className="lg:w-5/12 flex flex-wrap lg:ms-[-120px] justify-center">
           <div className="w-full justify-center flex lg:pe-16">
             <div className="border border-[#ffffff] -rotate-15 w-fit">
               <div className="rotate-15 flex lg:px-4 lg:py-14">
@@ -78,6 +85,9 @@ export default function CtaContactForm() {
               </div>
             </div>
           </div>
+        </div>
+                <div className="lg:w-6/12 lg:mt-[-50px] lg:px-16 lg:pb-24">
+          <ContactForm />
         </div>
 
         <div className="lg:w-6/12 lg:ps-8 lg:pt-20">
