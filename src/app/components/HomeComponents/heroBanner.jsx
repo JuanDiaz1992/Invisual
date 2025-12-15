@@ -152,7 +152,7 @@ export default function HeroBanner() {
         </div>
       </div>
 
-      <div className="relative z-50">
+      <div className="relative z-20">
         <BrandingCarousel />
       </div>
 
