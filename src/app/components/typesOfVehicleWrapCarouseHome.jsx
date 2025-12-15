@@ -1,9 +1,8 @@
 "use client";
 import { useRef } from "react";
-import Image from "next/image"; // ✅ Importar Image
+import Image from "next/image";
 import BasicSlider from "./BasicCarousel";
 
-// Sub-componente del slide
 const TypeOfWrapComponent = ({ data }) => {
   return (
     <article className="flex flex-col justify-center items-center h-full">
@@ -22,6 +21,7 @@ const TypeOfWrapComponent = ({ data }) => {
             fill
             className="object-contain block md:hidden absolute bottom-[25px] right-0 z-1 w-full"
             sizes="(max-width: 768px) 100vw, 500px"
+            alt=""
           />
         </div>
       </div>

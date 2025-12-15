@@ -42,13 +42,43 @@ export default function BannerServices({ slidesData }) {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    let resizeTimer;
+    let prevWidth = window.innerWidth;
+
+    const handleResize = () => {
+      clearTimeout(resizeTimer);
+
+      resizeTimer = setTimeout(() => {
+        const currentWidth = window.innerWidth;
+
+        if (currentWidth >= 1200 && prevWidth >= 1200) {
+          prevWidth = currentWidth;
+          return;
+        }
+        setIsLoading(true);
+        setResetId((prev) => prev + 1);
+        prevWidth = currentWidth;
+
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 500);
+      }, 200);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      clearTimeout(resizeTimer);
+    };
+  }, []);
   const handlePrev = () => {
     if (isLoading || !swiperRef.current?.swiper) return;
 
     const swiper = swiperRef.current.swiper;
     swiper.slidePrev();
 
-    // Reset a image2 cuando cambia de slide
     const newIndex = swiper.activeIndex;
     const slide = slidesData[newIndex];
     if (slide && slide.image2) {
@@ -63,7 +93,6 @@ export default function BannerServices({ slidesData }) {
     const swiper = swiperRef.current.swiper;
     swiper.slideNext();
 
-    // Reset a image2 cuando cambia de slide
     const newIndex = swiper.activeIndex;
     const slide = slidesData[newIndex];
     if (slide && slide.image2) {

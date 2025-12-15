@@ -97,7 +97,7 @@ const Footer = (props) => {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="lg:max-w-[510px] max-w-[314px]"
+                className="lg:max-w-[510px] max-w-full"
               />
             </div>
           </div>
