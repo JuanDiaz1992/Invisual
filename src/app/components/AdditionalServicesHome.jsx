@@ -60,7 +60,7 @@ const AdditionalServicesHome = ({ slides }) => {
 
             return (
               <SwiperSlide key={idx}>
-                <div className="w-full h-[400px] flex items-end p-x-[24px] relative">
+                <div className="w-full h-[454.44px] lg:h-[400px] flex items-end p-x-[24px] relative">
                   <Image
                     src={item.src}
                     alt={item.desc || "Service image"}
@@ -93,7 +93,7 @@ const AdditionalServicesHome = ({ slides }) => {
                     <p className="text-[14px] max-w-[232px] mb-[24px]">{item.desc}</p>
 
                     {isActive && (
-                      <div className="flex flex-col gap-[10px]">
+                      <div className="flex flex-col gap-[16px] md:gap-[10px]">
                         <ButtonLaid
                           buttonColor={"#fff"}
                           textColor={"#D92630"}
@@ -154,7 +154,7 @@ const AdditionalServicesHome = ({ slides }) => {
         </div>
 
         <div
-          className="lg:w-[35rem] lg:min-h-[195px] overflow-y-hidden select-none mt-[50px]"
+          className="lg:w-[35rem] min-h-[195px] overflow-y-hidden select-none mt-[50px]"
           aria-hidden="true"
         >
           <RuedaDeTitulos activeIndex={activeIndex} />
