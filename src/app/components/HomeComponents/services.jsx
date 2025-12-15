@@ -1,5 +1,3 @@
-// SOLUCIÓN APLICANDO CIERRE EXPLÍCITO
-
 import Carousel3Dv2 from "../carousel3Dv2";
 import { ServiceSlidesHome } from "../../data";
 import AnimatedLine from "../animatedLine";

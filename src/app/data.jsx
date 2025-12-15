@@ -268,7 +268,7 @@ export const TypeImagesLast = [
     title: "SUV",
     src: "suv-central-example.webp",
     alt: "We can wrap suvs",
-    type: 2,
+    type: 4,
     bgImages: ["suv-bg-1.webp", "suv-bg-2.webp", "suv-bg-3.webp"],
   },
   {
@@ -282,7 +282,7 @@ export const TypeImagesLast = [
     title: "BOAT",
     src: "boat-central-example.webp",
     alt: "We can wrap boats",
-    type: 2,
+    type: 4,
     bgImages: ["boat-bg-1.webp", "boat-bg-2.webp", "boat-bg-3.webp"],
   },
 ];

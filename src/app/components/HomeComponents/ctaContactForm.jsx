@@ -3,7 +3,7 @@ import ContactForm from "../ContactForm";
 import Image from "next/image";
 export default function CtaContactForm() {
   return (
-    <section id="cta" className="mt-[100px] lg:mt-[200px] pb-[143px] lg:pb-[96px]  home relative">
+    <section id="cta" className="mt-[100px] lg:mt-[200px] pb-[150px] lg:pb-[96px]  home relative">
       <Image
         src="/images/graphic-design-bars.webp"
         alt="bars"

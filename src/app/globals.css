@@ -299,7 +299,8 @@ body {
 .benefit-slider-bg {
   background-image: url('/images/truck-slide-benefits-bg.svg');
   background-position: center;
-  background-size:cover;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 #graphic.home{
@@ -469,6 +470,12 @@ body {
     background-image: none;
 
   }
+  #types2.home {
+  background-image: url('/images/vehicles-that-can-be-wrapped-movil.webp');
+  background-size: cover;
+  background-position: top center;
+
+}
 
 }
 

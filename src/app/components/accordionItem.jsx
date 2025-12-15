@@ -18,10 +18,9 @@ export const AccordionItem = ({ number, title, ans, isFirst, id }) => {
       <h3>
         <button
           onClick={() => setOpen(!open)}
-          // Atributos ARIA vitales para SEO técnico y Accesibilidad
           aria-expanded={open}
           aria-controls={contentId}
-          className="w-full flex justify-between items-center py-3 px-4 text-left text-lg hover:bg-gray-300 transition group cursor-pointer"
+          className="w-full flex justify-between items-center py-3 px-4 text-left text-lg hover:bg-gray-300 transition group cursor-pointer gap-x-[8px]"
         >
           <span
             className={`tofinowide text-[50px] group-hover:text-[#D92630] ${
@@ -31,7 +30,7 @@ export const AccordionItem = ({ number, title, ans, isFirst, id }) => {
             {number}
           </span>
 
-          <span className="capitalize text-[25px] font-bold group-hover:text-black">
+          <span className="capitalize text-[20px] leading-[25px] md:text-[25px] md:leading-[30px]  font-bold group-hover:text-black">
             {title}
           </span>
 
