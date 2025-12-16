@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { reviews } from "../data";
+import ReviewsMovile from "./reviewsMovile";
 
 const HomeReviews = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -296,78 +297,8 @@ const HomeReviews = () => {
         </Swiper>
       </div>
 
-      <div className="lg:hidden mb-[-92px]">
-        <div className="relative">
-          <Swiper
-            modules={[Pagination]}
-            slidesPerView={1.6}
-            centeredSlides={true}
-            spaceBetween={16}
-            breakpoints={{
-              320: { slidesPerView: 1.2, spaceBetween: 15 },
-              480: { slidesPerView: 1.4, spaceBetween: 15 },
-              768: { slidesPerView: 1.6, spaceBetween: 15 },
-            }}
-            pagination={{ clickable: true }}
-            onSwiper={(swiper) => {
-              mobileSwiperRef.current = swiper;
-              setActiveIndex(swiper.realIndex ?? swiper.activeIndex);
-            }}
-            onSlideChange={(swiper) => {
-              const idx = swiper.realIndex ?? swiper.activeIndex;
-              setActiveIndex(idx);
-              setIsMuted(true);
-            }}
-            className="mobile-reviews-swiper"
-          >
-            {reviews.map((review, index) => (
-              <SwiperSlide key={index}>
-                <div
-                  className="relative w-full overflow-hidden"
-                  style={{ minHeight: "655px" }}
-                >
-                  <div
-                    className={`absolute left-0 right-0 top-0 h-[455px] bg-cover bg-center transition-all duration-700 ease-out ${
-                      activeIndex === index
-                        ? "filter-none z-0"
-                        : "filter grayscale brightness-75 z-30"
-                    }`}
-                    style={{ backgroundImage: `url(${review.img})` }}
-                  />
-                  {activeIndex === index && (
-                    <div className="relative z-20 h-[455px]">
-                      {" "}
-                      <VideoControls youtubeLink={review.youtubeLink} />
-                      <video
-                        src={review.video}
-                        poster={review.img}
-                        autoPlay
-                        muted={isMuted}
-                        loop
-                        className="absolute top-0 left-0 w-full h-full object-cover"
-                      />
-                    </div>
-                  )}
-
-                  <div
-                    className={`absolute left-0 right-0 bottom-0 bg-white p-6 min-h-[262px] h-[262px] transition-transform duration-500 ease-out shadow-md ${
-                      activeIndex === index
-                        ? "translate-y-0 z-40 opacity-100 pointer-events-auto"
-                        : "-translate-y-full z-40 opacity-0 pointer-events-none"
-                    }`}
-                    aria-hidden={activeIndex !== index}
-                  >
-                    <p className="text-[18px] font-bold text-[#1b1b1b] mb-4">
-                      {review.title}
-                    </p>
-                    <p className="text-[14px] text-[#1b1b1b] ">{review.text}</p>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <div className="swiper-pagination !relative !bottom-0 !mt-6" />
-        </div>
+      <div className="block md:hidden w-full mb-[-92px]">
+        <ReviewsMovile reviews={reviews} />
       </div>
     </>
   );

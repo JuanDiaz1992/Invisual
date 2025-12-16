@@ -219,7 +219,7 @@ export default function BannerServices({ slidesData }) {
               {slidesData.map((slide, index) => (
                 <SwiperSlide key={slide.id}>
                   <div className="w-full h-full flex">
-                    <div className="w-3/12 h-full flex flex-col gap-[20px] justify-start items-center mt-[76px]">
+                    <div className="w-3/12 h-full flex flex-col gap-[20px] justify-start items-center mt-[60px]">
                       {/* Opción 1 */}
                       <div
                         className={`flex flex-col items-center justify-center gap-[17px] cursor-pointer transition-all duration-300 ${

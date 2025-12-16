@@ -17,7 +17,7 @@ const LearnMore = ({ href = "/", title }) => (
 );
 
 const Title = ({ children, className }) => (
-  <h3 className={`uppercase text-[40px] leading-[45px] font-bold ${className}`}>
+  <h3 className={`uppercase text-[20px] leading-[25px] md:text-[40px] md:leading-[45px] font-black italic ${className}`}>
     {children}
   </h3>
 );
@@ -29,7 +29,7 @@ const Description = ({ children, className }) => (
 const Card = ({ className, children }) => {
   return (
     <article
-      className={`h-full min-h-[400px] md:min-h-[350px] p-6 relative overflow-hidden border border-black/30 text-white shadow-[-1px_0px_7px_2px_rgba(0,0,0,0.63)] ${className}`}
+      className={`h-full min-h-[410px] md:min-h-[306px] p-6 relative overflow-hidden border border-black/30 text-white shadow-[-1px_0px_7px_2px_rgba(0,0,0,0.63)] ${className}`}
     >
       <Image
         src="/images/bg-service-card.webp"
@@ -39,9 +39,7 @@ const Card = ({ className, children }) => {
         quality={80}
       />
 
-      <div className="relative z-10 w-full h-full flex flex-col">
-        {children}
-      </div>
+      <div className="z-10 w-full h-full flex flex-col">{children}</div>
 
       <div
         className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none z-0"
@@ -57,8 +55,8 @@ const ServicesList = () => {
   return (
     <ul className="flex flex-col sm:flex-row sm:grid md:grid-cols-2 lg:grid-cols-3 mt-12 gap-6 list-none p-0">
       <li className="sm:col-span-2 lg:row-span-2 lg:col-span-1">
-        <Card className="items-center h-full">
-          <div className="space-y-2 max-lg:flex-1 relative z-20">
+        <Card className="items-center h-full pt-[60px]">
+          <div className="space-y-2 max-lg:flex-1 relative z-20 min-h-[360px] md:min-h-fit">
             <Title>Commercial wraps</Title>
             <Description>
               From food trucks to service vans, your vehicle is a powerful
@@ -73,8 +71,9 @@ const ServicesList = () => {
               title="Commercial Wraps"
             />
           </div>
+          <div className="absolute inset-0 z-10 w-full h-full bg-[linear-gradient(200deg,rgba(12,12,12,0.20)_61.72%,#0C0C0C_90.27%)] mix-blend-multiply"></div>
 
-          <div className="absolute -bottom-40 lg:-bottom-20 w-full min-w-[450px] max-w-[600px] h-[450px] z-10">
+          <div className="absolute -bottom-40 lg:-bottom-[110px] -left-[80px] w-full min-w-[500px] max-w-[800px] h-[450px] z-1">
             <Image
               alt="Truck commercial wrap branding example"
               src="/images/truck-orange.webp"
@@ -89,7 +88,7 @@ const ServicesList = () => {
       <li className="sm:col-span-2">
         <Card className="flex justify-end">
           <div className="sm:max-w-[50%] flex flex-col relative z-20 ml-auto">
-            <div className="flex-1 space-y-1">
+            <div className="flex-1 space-y-1 min-h-[360px] md:min-h-fit">
               <Title className="text-[20px]">Fleet wraps</Title>
               <Description>
                 Fleet wraps bring <strong>unity</strong> to your vehicles and
@@ -100,7 +99,8 @@ const ServicesList = () => {
             </div>
             <LearnMore href="/services/fleet-wraps" title="Fleet Wraps" />
           </div>
-          <div className="absolute top-0 left-0 w-full h-full max-w-[450px] z-10">
+          <div className="absolute inset-0 z-10 w-full h-full bg-[linear-gradient(200deg,rgba(12,12,12,0.20)_61.72%,#0C0C0C_90.27%)] mix-blend-multiply"></div>
+          <div className="absolute bottom-0 -left-[25px] w-full h-full max-w-[450px] z-1">
             <Image
               alt="Red truck fleet wrap example"
               src="/images/truck-red.webp"
@@ -114,7 +114,7 @@ const ServicesList = () => {
 
       <li>
         <Card>
-          <div className="flex-1 space-y-1 relative z-20">
+          <div className="flex-1 space-y-1 relative z-20 min-h-[360px] md:min-h-fit">
             <Title className="!text-[25px]">Color change</Title>
             <Description className="sm:max-w-[80%]">
               Transform your vehicle with a complete color change in stunning
@@ -127,7 +127,8 @@ const ServicesList = () => {
               title="Color Change Services"
             />
           </div>
-          <div className="absolute top-0 -right-20 w-full max-w-[500px] h-full z-10">
+          <div className="absolute inset-0 z-10 w-full h-full bg-[linear-gradient(200deg,rgba(12,12,12,0.20)_61.72%,#0C0C0C_90.27%)] mix-blend-multiply"></div>
+          <div className="absolute top-0 -right-20 w-full max-w-[500px] h-full z-1">
             <Image
               alt="Gray car color change wrap"
               src="/images/gray-car.webp"
@@ -141,7 +142,7 @@ const ServicesList = () => {
 
       <li>
         <Card>
-          <div className="flex-1 space-y-1 relative z-20">
+          <div className="flex-1 space-y-1 relative z-20 min-h-[360px] md:min-h-fit">
             <Title className="!text-[25px]">Specialty Vehicles</Title>
             <Description className="sm:max-w-[80%]">
               Not all vehicles are created equal and neither are our wraps.
@@ -155,7 +156,8 @@ const ServicesList = () => {
               title="Specialty Vehicle Wraps"
             />
           </div>
-          <div className="absolute bottom-0 -right-20 w-full h-[65%] z-10">
+          <div className="absolute inset-0 z-10 w-full h-full bg-[linear-gradient(200deg,rgba(12,12,12,0.20)_61.72%,#0C0C0C_90.27%)] mix-blend-multiply"></div>
+          <div className="absolute bottom-0 -right-[40px] w-full h-[65%] z-1">
             <Image
               alt="Specialty vehicle wrap example"
               src="/images/truck-t.webp"
@@ -169,9 +171,9 @@ const ServicesList = () => {
 
       <li className="col-span-2">
         <Card className="flex justify-end">
-          <div className="sm:max-w-[50%] flex flex-col relative z-20 ml-auto">
+          <div className="sm:max-w-[50%] flex flex-col relative z-20 ml-auto min-h-[380px] md:min-h-fit">
             <div className="flex-1 space-y-1">
-              <Title className="!text-[30px] leading-[35px]">
+              <Title className="!text-[30px] !leading-[35px] max-w-[330px]">
                 Vinyl Installation & Removal
               </Title>
               <Description>
@@ -184,12 +186,13 @@ const ServicesList = () => {
               title="Vinyl Installation and Removal"
             />
           </div>
-          <div className="absolute bottom-0 left-0 w-[450px] h-full z-10">
+          <div className="absolute inset-0 z-10 w-full h-full bg-[linear-gradient(200deg,rgba(12,12,12,0.20)_61.72%,#0C0C0C_90.27%)] mix-blend-multiply"></div>
+          <div className="absolute bottom-0 left-0 w-full md:w-[450px] h-full z-1">
             <Image
               alt="Professional vinyl installation service"
               src="/images/workingperson.webp"
               fill
-              className="object-cover object-bottom-left"
+              className="object-contain md:object-cover object-bottom-left"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
@@ -203,7 +206,7 @@ export default function AdditionalServicesSection() {
   return (
     <section className="overflow-x-clip relative lg:mb-[150px]">
       <div
-        className="lg:w-[200%] absolute h-[78%] rotate-17 origin-top-left overflow-hidden z-0"
+        className="w-[120%] lg:w-[200%] absolute h-[78%] rotate-17 origin-top-left overflow-hidden z-0"
         style={{ boxShadow: "0 0 21.45px 0px #000000B2" }}
       />
 
@@ -219,7 +222,7 @@ export default function AdditionalServicesSection() {
         />
       </div>
 
-      <Container className="p-2 relative z-20">
+      <Container className="p-2 relative z-20 mt-[-150px] lg:mt-0">
         <div className="leading-[40px] transform translate-y-8 max-h-min font-extrabold">
           <h2 className="uppercase flex flex-col text-[#D92630] text-[34px]">
             Wraps

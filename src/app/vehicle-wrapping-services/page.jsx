@@ -51,9 +51,9 @@ const VehicleWrappingServicesPage = () => {
     <>
       <Banner />
 
-      <AdditionalServicesSection />
-
       <CtaForm />
+
+      <AdditionalServicesSection />
 
       <CustomerSatisfaction />
 

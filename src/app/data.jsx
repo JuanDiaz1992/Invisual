@@ -321,7 +321,7 @@ export const BannerSlidesData = [
       "/images/vehicle-wrapping-services/banner/full-wrap-option-suv-3.webp",
     dot_width: "177px",
     dot_height: "93px",
-    title: "Sedan",
+    title: "SUV",
     name_wrapper1: "Spot graphics",
     name_wrapper2: "Full Wrap",
     name_wrapper3: "Full Wrap",
@@ -329,18 +329,18 @@ export const BannerSlidesData = [
   {
     id: 2,
     imagebase:
-      "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
-    image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
-    image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
-    image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-pick-up-base.webp",
+    image1: "/images/vehicle-wrapping-services/banner/full-wrap-pick-up-1.webp",
+    image2: "/images/vehicle-wrapping-services/banner/full-wrap-pick-up-2.webp",
+    image3: "/images/vehicle-wrapping-services/banner/full-wrap-pick-up-3.webp",
     imageSelectOption1:
-      "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-option-pick-up-1.webp",
     imageSelectOption2:
-      "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-option-pick-up-2.webp",
     imageSelectOption3:
-      "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-option-pick-up-3.webp",
     dotImage:
-      "/images/vehicle-wrapping-services/banner/full-wrap-dot-pick-up-truck.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-option-pick-up-3.webp",
     dot_width: "168.89px",
     dot_height: "87px",
     title: "Pick-Up Trucks",
@@ -372,16 +372,16 @@ export const BannerSlidesData = [
   {
     id: 4,
     imagebase:
-      "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
-    image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
-    image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
-    image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-box-trucks-base.webp",
+    image1: "/images/vehicle-wrapping-services/banner/full-wrap-box-trucks-1.webp",
+    image2: "/images/vehicle-wrapping-services/banner/full-wrap-box-trucks-2.webp",
+    image3: "/images/vehicle-wrapping-services/banner/full-wrap-box-trucks-3.webp",
     imageSelectOption1:
-      "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-option-box-trucks-1.webp",
     imageSelectOption2:
-      "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-option-box-trucks-2.webp",
     imageSelectOption3:
-      "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-option-box-trucks-3.webp",
     dotImage:
       "/images/vehicle-wrapping-services/banner/full-wrap-dot-box-trucks.webp",
     dot_width: "146px",
@@ -394,16 +394,16 @@ export const BannerSlidesData = [
   {
     id: 5,
     imagebase:
-      "/images/vehicle-wrapping-services/banner/full-wrap-van-base.webp",
-    image1: "/images/vehicle-wrapping-services/banner/full-wrap-van-1.webp",
-    image2: "/images/vehicle-wrapping-services/banner/full-wrap-van-2.webp",
-    image3: "/images/vehicle-wrapping-services/banner/full-wrap-van-3.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-food-truck-base.webp",
+    image1: "/images/vehicle-wrapping-services/banner/full-wrap-food-truck-1.webp",
+    image2: "/images/vehicle-wrapping-services/banner/full-wrap-food-truck-2.webp",
+    image3: "/images/vehicle-wrapping-services/banner/full-wrap-food-truck-3.webp",
     imageSelectOption1:
-      "/images/vehicle-wrapping-services/banner/full-wrap-option-van-1.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-option-food-truck-1.webp",
     imageSelectOption2:
-      "/images/vehicle-wrapping-services/banner/full-wrap-option-van-2.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-option-food-truck-2.webp",
     imageSelectOption3:
-      "/images/vehicle-wrapping-services/banner/full-wrap-option-van-3.webp",
+      "/images/vehicle-wrapping-services/banner/full-wrap-option-food-truck-3.webp",
     dotImage:
       "/images/vehicle-wrapping-services/banner/full-wrap-dot-food-truc.webp",
     dot_width: "173px",
@@ -573,4 +573,13 @@ export const sections = [
   { id: "graphic", label: "Our Projects" },
   { id: "additional", label: "Additional Services" },
   { id: "types", label: "Types of Vehicles Wrapped" },
+];
+
+export const sectionsServices = [
+  { id: "services", label: "Wraps Additional Services" },
+  { id: "satisfaction", label: "How It Works" },
+  { id: "why", label: "Commercial Wraps" },
+  { id: "benefits", label: "Fleet Wraps" },
+  { id: "graphic", label: "Types of Vehicle Wraps" },
+  { id: "additional", label: "Additional Services" },
 ];

@@ -82,11 +82,24 @@ const MobileMenu = () => {
             />
           </a>
         </div>
-        <ButtonLaid
-          buttonText={"240-664-1629"}
-          link={"tel:2406641629"}
-          width={150}
-        />
+        <div className="relative w-[55px] h-[41px] block md:hidden">
+          <a
+            href="tel:2406641629"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Find us on Google Maps"
+            title="View location on Google Maps"
+            className="relative w-full h-[40px] block"
+          >
+            <Image
+              src="/images/button-phone.svg"
+              alt=""
+              fill
+              className="object-contain"
+            />
+          </a>
+        </div>
+
       </div>
 
       <div
