@@ -35,7 +35,7 @@ export default function Banner() {
       <div className="absolute w-[120%] h-[65px] rotate-[165deg] overflow-hidden md:top-[20px] left-[-30px] md:left-[-130px] shadow-[5px_10px_10px_0px_rgba(0,0,0,1)] z-10">
         <div className={`w-full h-[100px] degradado float-up-down`} />
       </div>
-      <Container className={"z-50"}>
+      <Container className={"z-20"}>
         <h1 className="text-[47px] leading-[50px] md:text-[80px] md:leading-[85px] lg:text-[100px] font-black italic lg:pt-8 lg:leading-[110px] lg:pb-[15px] text-center relative z-50">
           {" "}
           FULL <span className="text-stroke ">WRAP</span>{" "}
@@ -53,11 +53,11 @@ export default function Banner() {
         <div className="hidden md:block relative z-20">
           <BannerServices slidesData={BannerSlidesData} />
         </div>
-        <div className="block md:hidden">
+        <div className="block md:hidden relative z-20">
           <BannerServicesMovil slidesData={BannerSlidesData} />
         </div>
       </Container>
-      <div className="absolute bottom-[400px] lg:bottom-[80px] right-0 max-h-[65px] h-[65px] rotate-[165deg] overflow-hidden translate-x-[150px] translate-y-[70px] shadow-[-20px_-15px_20px_-12px_rgba(0,0,0,0.5)] z-10">
+      <div className="absolute bottom-[400px] lg:bottom-[80px] right-0 max-h-[65px] h-[65px] rotate-[165deg] overflow-hidden translate-x-[150px] translate-y-[70px] shadow-[-20px_-15px_20px_-12px_rgba(0,0,0,0.5)] z-1">
         <div
           className={`w-[1300px] h-[100px] degradado-inverse `}
         />
