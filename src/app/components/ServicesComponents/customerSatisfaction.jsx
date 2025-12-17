@@ -37,7 +37,7 @@ export default function CustomerSatisfaction() {
         />
       </div>
 
-      <Container className={"flex flex-wrap !max-w-[1300px] lg:pt-64"}>
+      <Container className={"flex flex-wrap !max-w-[1300px] lg:pt-[0]"}>
         <div className="lg:w-8/12">
           <h2 className="lg:text-[90px] font-black lg:pb-12 lg:pt-8 leading-[90px] relative z-20 tofinowide">
             CUSTOMER{" "}

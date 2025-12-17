@@ -222,7 +222,7 @@ export default function AdditionalServicesSection() {
         />
       </div>
 
-      <Container className="p-2 relative z-20 mt-[-150px] lg:mt-0">
+      <Container className="p-2 relative z-20 mt-[-150px] lg:mt-[-95px]">
         <div className="leading-[40px] transform translate-y-8 max-h-min font-extrabold">
           <h2 className="uppercase flex flex-col text-[#D92630] text-[34px]">
             Wraps
