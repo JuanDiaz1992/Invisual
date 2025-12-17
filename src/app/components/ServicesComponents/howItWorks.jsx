@@ -62,7 +62,7 @@ export default function HowItWorks() {
                 </div>
               </div>
             </div>
-            <p className="text-white lg:pt-8 lg:max-w-[395px] whitespace-pre-line">
+            <p className="text-white lg:pt-8 lg:max-w-[378px] whitespace-pre-line">
               {steps[0].description}
             </p>
           </li>

@@ -5,7 +5,7 @@ import WarrantyImages from "../warrantyImages";
 export default function Warranty() {
   return (
     <section className="relative lg:mb-[100px] px-[24px] lx:px-0 mt-[50px] lg:mt-0 flex flex-col">
-      <div className="order-1">
+      <div className="order-1 lg:order-0 relative">
         <WarrantyImages />
       </div>
 
