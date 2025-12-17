@@ -86,7 +86,7 @@ export default function Reviews({ reviews }) {
 
   return (
     <>
-      <div className="hidden md:flex flex-row gap-6 w-full" role="list">
+      <div className="hidden lg:flex flex-row gap-6 w-full" role="list">
         {reviews.map((review, i) => {
           const isActive = currentExpanded === i;
           
@@ -154,7 +154,7 @@ export default function Reviews({ reviews }) {
           );
         })}
       </div>
-      <div className='block md:hidden w-full'>
+      <div className='block lg:hidden w-full pb-[30px]'>
         <ReviewsMovile reviews={reviews} />
       </div>
     </>

@@ -186,7 +186,7 @@ export default function BannerServices({ slidesData }) {
   };
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto flex select-none">
+    <div className="w-full max-w-[1200px] mx-auto flex select-none px-[24px] xl:px-0">
       <div className="w-[calc(100%-307px)] lg:w-[74.42%] relative">
         <p className="text-[14px] max-w-[299px] mb-[-40px] z-15 relative">
           Watch your vehicle go from bare to bold with our full wrap

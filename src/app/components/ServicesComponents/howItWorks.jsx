@@ -1,27 +1,7 @@
 import Image from "next/image";
-
+import { steps } from "../../data";
+import StepsMobileSlider from "../StepsMobileSlider";
 export default function HowItWorks() {
-const steps = [
-    {
-      id: "1",
-      title: "Consultation & Quote",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi.",
-      bgClass: "step-1-bg",
-    },
-    {
-      id: "2",
-      title: "Design & Approval",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi.",
-      bgClass: "step-2-bg",
-    },
-    {
-      id: "3",
-      title: "Installation & Delivery",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi.",
-      bgClass: "step-3-bg",
-    }
-  ]
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",
@@ -35,7 +15,7 @@ const steps = [
   };
 
   return (
-    <section className="relative lg:mb-[100px]">
+    <section className="relative lg:mb-[100px] pt-[34px] lg:pt-0 px-[24px] lx:px-0">
       <Image
         src="/images/how-it-works-vw.webp"
         alt=""
@@ -43,16 +23,28 @@ const steps = [
         srcSet="/images/how-it-works-vw.webp 768w, /images/how-it-works-vw.webp 1024w"
         width={1500}
         height={400}
-        className={`absolute top-0 right-0 min-w-[680px] -z-10`}
+        className={`hidden md:block absolute top-0 right-0 min-w-[680px] -z-10`}
+      />
+      <Image
+        src="/images/vehicle-wrapping-services/how-it-works-decoration-movil.webp"
+        alt=""
+        sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
+        srcSet="/images/vehicle-wrapping-services/how-it-works-decoration-movil.webp 768w, /images/vehicle-wrapping-services/how-it-works-decoration-movil.webp 1024w"
+        width={1500}
+        height={400}
+        className={`block md:hidden absolute bottom-[-400px] right-[-200px] min-w-[680px] -z-10`}
       />
 
-      <div className="lg:max-w-[1300px] mx-auto px-6 lg:px-0">
-        <h2 className="lg:text-[90px] font-black lg:pb-12 lg:pt-8 leading-[100px] relative z-50 tofinowide">
-          HOW{" "}
-          <span className="text-stroke lg:text-[120px] lg:block">IT WORKS</span>{" "}
+      <div className="lg:max-w-[1300px] mx-auto">
+        <h2 className="text-center md:text-left text-[40px] leading-[45px] md:text-[80px] md:leading-[85px] lg:text-[90px] font-black lg:pb-12 lg:pt-8 lg:leading-[100px] relative z-50 tofinowide mb-[22px] lg:mb-0">
+          HOW
+          <br />
+          <span className="text-stroke lg:text-[120px] lg:block">
+            IT WORKS
+          </span>{" "}
         </h2>
 
-        <ol className="flex lg:mt-20 list-none p-0 m-0">
+        <ol className="hidden lg:flex lg:mt-20 list-none p-0 m-0">
           <li className="lg:w-[461px]">
             <div>
               <div className="min-h-[444px] process-bg-modifier step-1-bg content-end relative">
@@ -70,7 +62,7 @@ const steps = [
                 </div>
               </div>
             </div>
-            <p className="text-white lg:pt-8 lg:max-w-[395px]">
+            <p className="text-white lg:pt-8 lg:max-w-[395px] whitespace-pre-line">
               {steps[0].description}
             </p>
           </li>
@@ -119,6 +111,9 @@ const steps = [
             </p>
           </li>
         </ol>
+        <div className="block lg:hidden">
+          <StepsMobileSlider steps={steps} />
+        </div>
       </div>
       <script
         type="application/ld+json"

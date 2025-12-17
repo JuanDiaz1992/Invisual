@@ -53,8 +53,8 @@ const Card = ({ className, children }) => {
 
 const ServicesList = () => {
   return (
-    <ul className="flex flex-col sm:flex-row sm:grid md:grid-cols-2 lg:grid-cols-3 mt-12 gap-6 list-none p-0">
-      <li className="sm:col-span-2 lg:row-span-2 lg:col-span-1">
+    <ul className="flex flex-col sm:flex-row sm:grid md:grid-cols-2 lg:grid-cols-3 gap-6 list-none p-0">
+      <li className="sm:col-span-2 lg:row-span-2 lg:col-span-1 mt-0 md:mt-[61px]">
         <Card className="items-center h-full pt-[60px]">
           <div className="space-y-2 max-lg:flex-1 relative z-20 min-h-[360px] md:min-h-fit">
             <Title>Commercial wraps</Title>
@@ -204,7 +204,7 @@ const ServicesList = () => {
 
 export default function AdditionalServicesSection() {
   return (
-    <section className="overflow-x-clip relative lg:mb-[150px]">
+    <section className="overflow-x-clip relative lg:mb-[150px]]">
       <div
         className="w-[120%] lg:w-[200%] absolute h-[78%] rotate-17 origin-top-left overflow-hidden z-0"
         style={{ boxShadow: "0 0 21.45px 0px #000000B2" }}
@@ -223,7 +223,7 @@ export default function AdditionalServicesSection() {
       </div>
 
       <Container className="p-2 relative z-20 mt-[-150px] lg:mt-[-95px]">
-        <div className="leading-[40px] transform translate-y-8 max-h-min font-extrabold">
+        <div className="leading-[40px] transform translate-y-8 max-h-min font-extrabold pb-[48px] md:pb-0">
           <h2 className="uppercase flex flex-col text-[#D92630] text-[34px]">
             Wraps
             <span className="uppercase text-white text-[28px]">

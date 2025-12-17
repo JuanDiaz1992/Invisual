@@ -3,7 +3,7 @@ import BannerServicesMovil from "../BannerServicesMovil";
 import Container from "../Container";
 import { BannerSlidesData, sectionsServices } from "../../data";
 import ButtonLaid from "../button";
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Banner() {
   const jsonLd = {
@@ -50,7 +50,7 @@ export default function Banner() {
           </p>
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden md:block relative z-20">
           <BannerServices slidesData={BannerSlidesData} />
         </div>
         <div className="block md:hidden">
@@ -58,7 +58,9 @@ export default function Banner() {
         </div>
       </Container>
       <div className="absolute bottom-[400px] lg:bottom-[80px] right-0 max-h-[65px] h-[65px] rotate-[165deg] overflow-hidden translate-x-[150px] translate-y-[70px] shadow-[-20px_-15px_20px_-12px_rgba(0,0,0,0.5)] z-10">
-        <div className={`lg:w-[1300px] w-[800px] h-[100px] degradado-inverse `} />
+        <div
+          className={`w-[1300px] h-[100px] degradado-inverse `}
+        />
       </div>
       {/******* Links de Movil */}
       <nav
@@ -114,7 +116,6 @@ export default function Banner() {
           >
             {sectionsServices[5].label}
           </Link>
-
         </div>
       </nav>
       <script

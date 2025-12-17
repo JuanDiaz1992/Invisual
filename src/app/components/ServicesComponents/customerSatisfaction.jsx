@@ -26,8 +26,8 @@ export default function CustomerSatisfaction() {
   };
 
   return (
-    <section className="relative lg:mt-16 lg:mb-[100px]">
-      <div className="absolute top-0 right-0 min-w-[680px] w-[50%] h-[400px] pointer-events-none -z-10">
+    <section className="relative pt-[133px] lg:pt-0 lg:mt-16 lg:mb-[100px] satisfaction-services">
+      <div className="absolute hidden md:block top-0 right-0 min-w-[680px] w-[50%] h-[400px] pointer-events-none -z-10">
         <Image
           src="/images/customer-s-top-lines.webp"
           alt=""
@@ -38,17 +38,23 @@ export default function CustomerSatisfaction() {
       </div>
 
       <Container className={"flex flex-wrap !max-w-[1300px] lg:pt-[0]"}>
-        <div className="lg:w-8/12">
-          <h2 className="lg:text-[90px] font-black lg:pb-12 lg:pt-8 leading-[90px] relative z-20 tofinowide">
+        <div className="xl:w-8/12">
+          <h2 className="text-[40px] leading-[45px] md:text-[80px] md:leading-[85px] lg:text-[90px] font-black md:pb-[24px] lg:pt-8 lg:leading-[90px] relative z-20 tofinowide">
             CUSTOMER{" "}
             <span className="text-stroke lg:text-[100px] block">
               SATISFACTION
             </span>
           </h2>
+          <p className="block md:hidden text-[14px] mt-[30px] mb-[27px]">
+            We do more than just car wrapping; we focus on understanding our
+            clients' needs, creating their branding and ensuring their absolute
+            satisfaction. <br/><br/> We invite you to see what some of our clients have to
+            say about our service and to learn more about our work.
+          </p>
         </div>
 
-        <div className="lg:w-4/12 flex flex-wrap content-end lg:pb-12 z-20 relative">
-          <p className="w-full mb-2 font-bold">Follow Us</p>
+        <div className="xl:w-4/12 flex flex-wrap content-end lg:pb-12 z-20 relative mb-[53px] lg:mb-0">
+          <p className="text-[22px] w-full mb-2 font-bold">Follow Us</p>
           <div className="flex flex-wrap lg:pt-4 lg:gap-x-2 gap-y-2">
             <ButtonLaid
               buttonText={"IN VISUAL SIGNS"}

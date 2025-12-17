@@ -123,7 +123,7 @@ export default function BannerServicesMovil({ slidesData }) {
           </svg>
         </button>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center z-20 relative drop-shadow-[0_0_21.446px_rgba(0,0,0,0.70)]">
         <button
           onClick={() => setListActive(!listActive)}
           className="flex justify-center items-center py-[27px] px-[20px] gap-[6px] w-full bg-[#1A1A1A] mt-[27px] max-w-[400px] "

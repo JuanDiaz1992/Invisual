@@ -583,3 +583,24 @@ export const sectionsServices = [
   { id: "graphic", label: "Types of Vehicle Wraps" },
   { id: "additional", label: "Additional Services" },
 ];
+
+export const steps = [
+    {
+      id: "1",
+      title: "Consultation & Quote",
+      description: "We start by learning about your idea and understanding your goals. We discuss the type of vehicle, branding style, and the message you want to communicate. Based on this information, we prepare a detailed quote, project timeline, and answer any questions you may have. \n\n Our goal is to give you clarity and confidence before moving forward with the project.",
+      bgClass: "step-1-bg",
+    },
+    {
+      id: "2",
+      title: "Design & Approval",
+      description: "Our design team creates a customized wrap concept for your vehicle, aligned with your brand and vision. We present a realistic mockup so you can see exactly how it will look once installed. Any revisions you need are made quickly and professionally. Only after your full approval do we move on to printing and material preparation.",
+      bgClass: "step-2-bg",
+    },
+    {
+      id: "3",
+      title: "Installation & Delivery",
+      description: "Your vehicle is brought to our facility for installation. We begin with a thorough cleaning and surface preparation to ensure perfect adhesion. The vinyl is applied with precision to guarantee a smooth, bubble-free, and long–lasting finish. Once completed, we perform a final inspection and deliver your vehicle ready to make an impact on the road.",
+      bgClass: "step-3-bg",
+    }
+  ]

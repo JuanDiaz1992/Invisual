@@ -1,7 +1,7 @@
 import ContactForm from "../ContactForm";
 export default function CtaForm() {
   return (
-    <section className="text-white relative z-10 mt-[70px] lg:mt-0">
+    <section className="text-white relative z-10 mt-[70px] lg:mt-0 px-[24px] lx:px-0">
       <div
         style={{
           boxShadow: "-1px 0px 7px 2px rgba(0,0,0,0.63)",

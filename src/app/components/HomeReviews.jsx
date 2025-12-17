@@ -297,7 +297,7 @@ const HomeReviews = () => {
         </Swiper>
       </div>
 
-      <div className="block md:hidden w-full mb-[-92px]">
+      <div className="block lg:hidden w-full mb-[-92px]">
         <ReviewsMovile reviews={reviews} />
       </div>
     </>
